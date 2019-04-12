@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VisualV 1.0.440 -->
+<!-- DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS! -->
+<VfxLightningSettings>
+  <lightningOccurranceChance value="4VisualV 1.0.440" />
+  <lightningShakeIntensity value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+  <lightningTimeCycleMods>
+    <tcLightningDirectionalBurst>lightning</tcLightningDirectionalBurst>
+    <tcLightningCloudBurst>lightning_cloud</tcLightningCloudBurst>
+    <tcLightningStrikeOnly>lightning_weak</tcLightningStrikeOnly>
+    <tcLightningDirectionalBurstWithStrike>lightning_strong</tcLightningDirectionalBurstWithStrike>
+  </lightningTimeCycleMods>
+  <DirectionalBurstSettings>
+    <BurstIntensityMin value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+    <BurstIntensityMax value="8.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <BurstDurationMin value="0.05VisualV 1.0.440VisualV 1.0.440" />
+    <BurstDurationMax value="0.15VisualV 1.0.440VisualV 1.0.440" />
+    <BurstSeqCount value="4" />
+    <RootOrbitXVariance value="180.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <RootOrbitYVarianceMin value="50.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <RootOrbitYVarianceMax value="60.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <BurstSeqOrbitXVariance value="10.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <BurstSeqOrbitYVariance value="5.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+  </DirectionalBurstSettings>
+  <CloudBurstSettings>
+    <BurstIntensityMin value="8.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <BurstIntensityMax value="64.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <LightSourceExponentFalloff value="128.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <LightDeltaPos value="-4VisualV 1.0.440.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <LightDistance value="3970.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <LightColor value="0xFFA1D3FF" />
+    <CloudBurstCommonSettings>
+      <BurstDurationMin value="0.09VisualV 1.0.440VisualV 1.0.440" />
+      <BurstDurationMax value="0.25VisualV 1.0.440VisualV 1.0.440" />
+      <BurstSeqCount value="5" />
+      <RootOrbitXVariance value="36.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <RootOrbitYVarianceMin value="5.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <RootOrbitYVarianceMax value="30.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <LocalOrbitXVariance value="20.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <LocalOrbitYVariance value="5.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <BurstSeqOrbitXVariance value="4.6VisualV 1.0.440VisualV 1.0.4400" />
+      <BurstSeqOrbitYVariance value="3.6VisualV 1.0.440VisualV 1.0.4400" />
+      <DelayMin value="0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <DelayMax value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <SizeMin value="735.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <SizeMax value="2475.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    </CloudBurstCommonSettings>
+  </CloudBurstSettings>
+  <StrikeSettings>
+    <IntensityMin value="256.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <IntensityMax value="384.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <IntensityMinClamp value="0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <WidthMin value="0.07VisualV 1.0.440VisualV 1.0.440" />
+    <WidthMax value="0.11VisualV 1.0.440VisualV 1.0.440" />
+    <WidthMinClamp value="0.05VisualV 1.0.440VisualV 1.0.440" />
+    <IntensityFlickerMin value="0.242VisualV 1.0.4400" />
+    <IntensityFlickerMax value="1.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <IntensityFlickerFrequency value="20.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <IntensityLevelDecayMin value="0.8VisualV 1.0.440VisualV 1.0.4400" />
+    <IntensityLevelDecayMax value="0.95VisualV 1.0.440VisualV 1.0.440" />
+    <WidthLevelDecayMin value="0.8VisualV 1.0.440VisualV 1.0.4400" />
+    <WidthLevelDecayMax value="0.95VisualV 1.0.440VisualV 1.0.440" />
+    <NoiseTexScale value="7.1VisualV 1.0.440VisualV 1.0.4400" />
+    <NoiseAmplitude value="7.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <NoiseAmpMinDistLerp value="2VisualV 1.0.4400.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <NoiseAmpMaxDistLerp value="1VisualV 1.0.440VisualV 1.0.440.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <SubdivisionCount value="5" />
+    <OrbitDirXVariance value="20.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <OrbitDirYVarianceMin value="20.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <OrbitDirYVarianceMax value="80.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <MaxDistanceForExposureReset value="0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <AngularWidthFactor value="0.025VisualV 1.0.4400" />
+    <MaxHeightForStrike value="3VisualV 1.0.4400.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <CoronaIntensityMult value="0.23VisualV 1.0.440VisualV 1.0.440" />
+    <BaseCoronaSize value="0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <BaseColor value="0xFF9CCAFF" />
+    <FogColor value="0xFF869EFC" />
+    <CloudLightIntensityMult value="52.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <CloudLightDeltaPos value="-1610.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <CloudLightRadius value="355.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <CloudLightFallOffExponent value="128.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <MaxDistanceForBurst value="56VisualV 1.0.440.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <BurstThresholdIntensity value="0.4VisualV 1.0.440VisualV 1.0.4400" />
+    <LightningFadeWidth value="50.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <LightningFadeWidthFalloffExp value="5.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    <variations>
+      <Item>
+        <DurationMin value="0.9VisualV 1.0.440VisualV 1.0.4400" />
+        <DurationMax value="2.5VisualV 1.0.440VisualV 1.0.4400" />
+        <AnimationTimeMin value="0.05VisualV 1.0.440VisualV 1.0.440" />
+        <AnimationTimeMax value="0.2VisualV 1.0.440VisualV 1.0.4400" />
+        <EndPointOffsetXVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        <SubdivisionPatternMask value="255" />
+        <ZigZagSplitPoint>
+          <FractionMin value="0.45VisualV 1.0.440VisualV 1.0.440" />
+          <FractionMax value="0.55VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationRightVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        </ZigZagSplitPoint>
+        <ForkZigZagSplitPoint>
+          <FractionMin value="0.45VisualV 1.0.440VisualV 1.0.440" />
+          <FractionMax value="0.55VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationRightVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        </ForkZigZagSplitPoint>
+        <ForkPoint>
+          <DeviationRightVariance value="0.6VisualV 1.0.440VisualV 1.0.4400" />
+          <DeviationForwardMin value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+          <DeviationForwardMax value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthMin value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthMax value="0.5VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+        </ForkPoint>
+        <KeyFrameData>
+          <LightningMainIntensity>
+            <keyData>
+              <numKeyEntries value="18" />
+              <keyEntryData content="float_array">
+                0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.137931	0.413793	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.062295	0.448276	0.795974	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.083607	0.531874	0.926724	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.133721	0.728448	0.935944	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.177326	0.737366	0.943965	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.218023	0.745690	0.935027	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.257377	0.219828	0.926384	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.295082	0.074424	0.918103	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.306557	0.030172	0.774605	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.362295	0.030172	0.077586	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.454098	0.318965	0.918103	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.513115	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.393469	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.557377	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.639344	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.862069	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.655738	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.821595	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.714754	0.327586	0.675894	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.932787	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.137608	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.988525	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+              </keyEntryData>
+            </keyData>
+          </LightningMainIntensity>
+          <LightningBranchIntensity>
+            <keyData>
+              <numKeyEntries value="6" />
+              <keyEntryData content="float_array">
+                0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.137931	0.534483	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.091803	0.488736	0.892241	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.122951	0.607759	0.842607	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.160656	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.782524	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.254098	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.633621	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.370492	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+              </keyEntryData>
+            </keyData>
+          </LightningBranchIntensity>
+        </KeyFrameData>
+      </Item>
+      <Item>
+        <DurationMin value="0.8VisualV 1.0.440VisualV 1.0.4400" />
+        <DurationMax value="1.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+        <AnimationTimeMin value="0.05VisualV 1.0.440VisualV 1.0.440" />
+        <AnimationTimeMax value="0.2VisualV 1.0.440VisualV 1.0.4400" />
+        <EndPointOffsetXVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        <SubdivisionPatternMask value="255" />
+        <ZigZagSplitPoint>
+          <FractionMin value="0.45VisualV 1.0.440VisualV 1.0.440" />
+          <FractionMax value="0.55VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationRightVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        </ZigZagSplitPoint>
+        <ForkZigZagSplitPoint>
+          <FractionMin value="0.45VisualV 1.0.440VisualV 1.0.440" />
+          <FractionMax value="0.55VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationRightVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        </ForkZigZagSplitPoint>
+        <ForkPoint>
+          <DeviationRightVariance value="0.6VisualV 1.0.440VisualV 1.0.4400" />
+          <DeviationForwardMin value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+          <DeviationForwardMax value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthMin value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthMax value="0.5VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+        </ForkPoint>
+        <KeyFrameData>
+          <LightningMainIntensity>
+            <keyData>
+              <numKeyEntries value="15" />
+              <keyEntryData content="float_array">
+                0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.137931	0.413793	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.062295	0.448276	0.795974	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.083607	0.455529	0.926724	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.188953	0.491379	0.937818	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.206395	0.507432	0.939655	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.273256	0.568966	0.923407	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.295082	0.590204	0.918103	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.366279	0.659483	0.894640	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.438953	0.586207	0.870690	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.540698	0.413793	0.853448	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.610465	0.538793	0.859545	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.639344	0.480307	0.862069	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.714754	0.327586	0.675894	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.932787	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.137608	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.988525	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+              </keyEntryData>
+            </keyData>
+          </LightningMainIntensity>
+          <LightningBranchIntensity>
+            <keyData>
+              <numKeyEntries value="6" />
+              <keyEntryData content="float_array">
+                0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.137931	0.534483	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.188953	0.324713	0.646552	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.279070	0.413793	0.625645	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.616279	0.117497	0.547414	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.75VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.244028	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.857558	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+              </keyEntryData>
+            </keyData>
+          </LightningBranchIntensity>
+        </KeyFrameData>
+      </Item>
+      <Item>
+        <DurationMin value="1.8VisualV 1.0.440VisualV 1.0.4400" />
+        <DurationMax value="3.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+        <AnimationTimeMin value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+        <AnimationTimeMax value="0.2VisualV 1.0.440VisualV 1.0.4400" />
+        <EndPointOffsetXVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        <SubdivisionPatternMask value="255" />
+        <ZigZagSplitPoint>
+          <FractionMin value="0.45VisualV 1.0.440VisualV 1.0.440" />
+          <FractionMax value="0.55VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationRightVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        </ZigZagSplitPoint>
+        <ForkZigZagSplitPoint>
+          <FractionMin value="0.45VisualV 1.0.440VisualV 1.0.440" />
+          <FractionMax value="0.55VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+          <DeviationRightVariance value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+        </ForkZigZagSplitPoint>
+        <ForkPoint>
+          <DeviationRightVariance value="0.6VisualV 1.0.440VisualV 1.0.4400" />
+          <DeviationForwardMin value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+          <DeviationForwardMax value="0.3VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthMin value="0.1VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthMax value="0.5VisualV 1.0.440VisualV 1.0.4400" />
+          <LengthDecay value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+        </ForkPoint>
+        <KeyFrameData>
+          <LightningMainIntensity>
+            <keyData>
+              <numKeyEntries value="19" />
+              <keyEntryData content="float_array">
+                0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.137931	0.413793	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.062295	0.448276	0.795974	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.083607	0.511344	0.926724	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.159884	0.737069	0.950543	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.180233	0.690301	0.956897	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.218023	0.603448	0.944132	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.266272	0.706897	0.927834	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.295082	0.662592	0.918103	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.319527	0.625VisualV 1.0.4400	0.918103	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.362295	0.474138	0.918103	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.393491	0.421408	0.831897	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.454098	0.318965	0.690155	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.505917	0.316118	0.568966	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.532544	0.314655	0.555630	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.615385	0.206897	0.514143	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.695266	0.303917	0.474138	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.714754	0.327586	0.442630	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.932787	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.090117	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.988525	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+              </keyEntryData>
+            </keyData>
+          </LightningMainIntensity>
+          <LightningBranchIntensity>
+            <keyData>
+              <numKeyEntries value="5" />
+              <keyEntryData content="float_array">
+                0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.137931	0.534483	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.072674	0.323276	0.508621	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.160656	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.416347	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.191860	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.383621	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+                0.370492	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440	
+              </keyEntryData>
+            </keyData>
+          </LightningBranchIntensity>
+        </KeyFrameData>
+      </Item>
+    </variations>
+    <CloudBurstCommonSettings>
+      <BurstDurationMin value="0.09VisualV 1.0.440VisualV 1.0.440" />
+      <BurstDurationMax value="0.25VisualV 1.0.440VisualV 1.0.440" />
+      <BurstSeqCount value="5" />
+      <RootOrbitXVariance value="36.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <RootOrbitYVarianceMin value="5.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <RootOrbitYVarianceMax value="30.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <LocalOrbitXVariance value="10.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <LocalOrbitYVariance value="10.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <BurstSeqOrbitXVariance value="10.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <BurstSeqOrbitYVariance value="10.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <DelayMin value="0.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <DelayMax value="2.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <SizeMin value="2605.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+      <SizeMax value="2635.VisualV 1.0.440VisualV 1.0.440VisualV 1.0.440" />
+    </CloudBurstCommonSettings>
+  </StrikeSettings>
+</VfxLightningSettings>
