@@ -1,4 +1,4 @@
-# VisualV 1.0.490
+# VisualV 1.0.500
 # DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS!
 #
 # stores intial values for configuration of in game elements
@@ -15,7 +15,7 @@ raincollision.waterspeed	1.00
 
 
 #Values for rain GPU particle effect
-rain.NumberParticles	65536
+rain.NumberParticles	16384
 rain.UseLitShader	1.00
 # rain.gravity	0.00	0.00	-0.98
 rain.gravity.x	0.00
@@ -149,6 +149,7 @@ car.neon.falloffexponent 128.0
 car.neon.capsuleextent.sides 1.2
 car.neon.capsuleextent.frontback 0.6
 car.neon.clipplaneheight -0.014
+car.neon.bikeclipplaneheight 0.25								 
 
 car.headlights.angle	-0.7
 car.headlights.split	0.0
@@ -478,6 +479,11 @@ car.extralight.night.emissive.on	9.00
 car.extralight.day.emissive.off	0.001
 car.extralight.night.emissive.off	0.001
 car.emissiveMultiplier	2.00
+car.sirenlight.day.emissive.on		150.00
+car.sirenlight.night.emissive.on	150.00
+car.sirenlight.day.emissive.off		0.05
+car.sirenlight.night.emissive.off	0.04
+car.emissiveMultiplier 2.00					   
 
 # Lod distances for vehicles
 car.lod.distance.high	30.00
@@ -676,6 +682,20 @@ pedFpsLight.volumeColor.w	1.000
 pedFpslight.fade	20.000
 pedFpslight.shadowFade	15.000
 pedFpslight.specularFade	10.000
+
+pedFootLight.color.red		1.000
+pedFootLight.color.green	1.000
+pedFootLight.color.blue		1.000
+pedFootLight.intensity		6.000
+pedFootLight.radius		0.15
+pedFootLight.capsuleLength	0.100
+pedFootLight.offset.x 		0.15
+pedFootLight.offset.y 		-0.075
+pedFootLight.offset.z		0.000
+pedFootLight.offset.w 		0.000
+pedFootLight.falloffExp		11.000
+pedFootLight.fade 		20.000
+pedFootLight.specularFade 	10.000
 
 # Lod distances for peds
 ped.lod.distance.high	25.00

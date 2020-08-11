@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- VisualV 1.0.490 -->
+<!-- VisualV 1.0.500 -->
 <!-- DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS! -->
 <timecycle_modifier_data version="1.000000">
 	<modifier name="default" numMods="0" userFlags="0" />
@@ -6702,5 +6702,84 @@
     <blur_vignetting_radius>10.000 0.000</blur_vignetting_radius>
     <blur_vignetting_intensity>1.000 0.000</blur_vignetting_intensity>
     <screen_blur_intensity>0.150 0.000</screen_blur_intensity>
+  </modifier>
+  <modifier name="CarDamageHit" numMods="6" userFlags="0">
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>4.000 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_contrast>0.100 0.000</postfx_vignetting_contrast>
+    <postfx_vignetting_col_r>1.000 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.000 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.020 0.000</postfx_vignetting_col_b>
+  </modifier>
+  <modifier name="CarPitstopComplete" numMods="6" userFlags="0">
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>4.000 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_contrast>0.100 0.000</postfx_vignetting_contrast>
+    <postfx_vignetting_col_r>1.000 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.000 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.020 0.000</postfx_vignetting_col_b>
+  </modifier>
+  <modifier name="CarPitstopHealth01" numMods="30" userFlags="0">
+    <postfx_shift_col_r>1.000 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>1.000 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>1.000 1.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>0.035 0.000</postfx_shift_cutoff>
+    <postfx_desaturation>0.750 0.000</postfx_desaturation>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>3.744 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.235 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.383 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.290 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.010 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.300 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_w>4.000 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.712 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.300 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.103 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.225 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.010 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.300 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_tonemap_filmic_w_bright>4.000 0.000</postfx_tonemap_filmic_w_bright>
+    <postfx_vignetting_intensity>0.750 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>5.000 0.000</postfx_vignetting_radius>
+    <postfx_motionblurlength>1.000 0.000</postfx_motionblurlength>
+    <chrom_aberration_coeff>-0.150 0.000</chrom_aberration_coeff>
+    <chrom_aberration_coeff2>0.150 0.000</chrom_aberration_coeff2>
+    <blur_vignetting_radius>5.000 0.000</blur_vignetting_radius>
+    <blur_vignetting_intensity>1.000 0.000</blur_vignetting_intensity>
+  </modifier>
+  <modifier name="CarPitstopHealth02" numMods="29" userFlags="0">
+    <postfx_shift_col_r>0.529 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>0.827 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>1.000 1.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>1.454 0.000</postfx_shift_cutoff>
+    <postfx_desaturation>1.250 0.000</postfx_desaturation>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>11.680 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.025 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.032 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.057 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.029 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.238 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>3.213 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.025 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.992 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.992 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.029 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.238 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>5.000 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_contrast>0.178 0.000</postfx_vignetting_contrast>
+    <postfx_motionblurlength>1.000 0.000</postfx_motionblurlength>
+    <chrom_aberration_coeff>-0.150 0.000</chrom_aberration_coeff>
+    <chrom_aberration_coeff2>0.150 0.000</chrom_aberration_coeff2>
+    <blur_vignetting_radius>2.500 0.000</blur_vignetting_radius>
+    <blur_vignetting_intensity>1.000 0.000</blur_vignetting_intensity>
   </modifier>
 </timecycle_modifier_data>
