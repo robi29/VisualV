@@ -191,6 +191,10 @@ struct VSOut
 	float4 blur13 : TEXCOORD14;
 };
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Vertex Shaders
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 VSOut VS_HeatHaze(in uint id : SV_VertexID)
 {
 	VSOut res;

@@ -4,19 +4,19 @@
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
  * the Software with restriction, including without limitation the rights to
- * use and/or sell copies of the Software, and to permit persons to whom the Software 
+ * use and/or sell copies of the Software, and to permit persons to whom the Software
  * is furnished to do so, subject to the following conditions:
  *
- * The above copyright notice and the permission notices (this and below) shall 
+ * The above copyright notice and the permission notices (this and below) shall
  * be included in all copies or substantial portions of the Software.
  *
  * Permission needs to be specifically granted by the author of the software to any
- * person obtaining a copy of this software and associated documentation files 
- * (the "Software"), to deal in the Software without restriction, including without 
- * limitation the rights to copy, modify, merge, publish, distribute, and/or 
+ * person obtaining a copy of this software and associated documentation files
+ * (the "Software"), to deal in the Software without restriction, including without
+ * limitation the rights to copy, modify, merge, publish, distribute, and/or
  * sublicense the Software, and subject to the following conditions:
  *
- * The above copyright notice and the permission notices (this and above) shall 
+ * The above copyright notice and the permission notices (this and above) shall
  * be included in all copies or substantial portions of the Software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -72,7 +72,7 @@ void PS_AL_DetectHigh(float4 vpos : SV_Position, float2 texcoord : TEXCOORD, out
 void PS_AL_HGB(float4 vpos : SV_Position, float2 texcoord : TEXCOORD, out float4 hgbR : SV_Target0)
 {
 	float4 hgb = tex2D(alInColor, texcoord);
-	
+
 	[branch]
 	if (!IsPausedGame())
 	{
@@ -101,7 +101,7 @@ void PS_AL_HGB(float4 vpos : SV_Position, float2 texcoord : TEXCOORD, out float4
 void PS_AL_VGB(float4 vpos : SV_Position, float2 texcoord : TEXCOORD, out float4 vgbR : SV_Target0)
 {
 	float4 vgb = tex2D(alOutColor, texcoord);
-	
+
 	[branch]
 	if (!IsPausedGame())
 	{
@@ -114,7 +114,7 @@ void PS_AL_VGB(float4 vpos : SV_Position, float2 texcoord : TEXCOORD, out float4
 
 		[flatten]if ((texcoord.y + sampleOffsets[0]) < 1.05) vgb += tex2D(alOutColor, texcoord + float2(0.0, sampleOffsets[0])) * sampleWeights[1] * step;
 		[flatten]if ((texcoord.y - sampleOffsets[0]) > -0.05) vgb += tex2D(alOutColor, texcoord - float2(0.0, sampleOffsets[0])) * sampleWeights[1] * step;
-		
+
 		[flatten]if ((texcoord.y + sampleOffsets[1]) < 1.05) vgb += tex2D(alOutColor, texcoord + float2(0.0, sampleOffsets[1])) * sampleWeights[2] * step;
 		[flatten]if ((texcoord.y - sampleOffsets[1]) > -0.05) vgb += tex2D(alOutColor, texcoord - float2(0.0, sampleOffsets[1])) * sampleWeights[2] * step;
 
@@ -130,13 +130,13 @@ void PS_AL_VGB(float4 vpos : SV_Position, float2 texcoord : TEXCOORD, out float4
 float4 PS_AL_Magic(float4 vpos : SV_Position, float2 texcoord : TEXCOORD) : SV_Target
 {
 	float4 base = tex2D(SamplerColor, texcoord);
-	
+
 	[branch]
 	if (IsPausedGame())
 	{
 		return base;
 	}
-	
+
 	float4 high = tex2D(alInColor, texcoord);
 
 	high = min(0.0325f,high)*max(0.0f,(1.15f));
@@ -271,7 +271,7 @@ technique AmbientLight
 		PixelShader = PS_AL_VGB;
 		RenderTarget = alInTex;
 	}
-	
+
 	pass AL_Magic
 	{
 		VertexShader = RFX_VS_PostProcess;

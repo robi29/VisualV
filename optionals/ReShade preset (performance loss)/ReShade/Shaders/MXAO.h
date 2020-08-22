@@ -211,18 +211,18 @@ sampler2D sMXAO_CullingTex	{ Texture = MXAO_CullingTex;	};
 float ComputeFadeOutMXAO()
 {
 	float3 fadeoutTex = tex2D(sMXAO_ColorTex, float2(0.0f, 0.0f)).rgb;
-	
+
 	[flatten]
 	if (fadeoutTex.b < 1.0f)
 	{
 		return 0.0f;
 	}
-	
+
 	int R = fadeoutTex.r * 255;
-	
+
 	int w0 = (R & 0x000000F0) >> 4;
 	int w1 = R & 0x0000000F;
-	
+
 	static const float weathers[16] = {
 		EXTRASUNNY_FADEOUT,
 		CLEAR_FADEOUT,
@@ -241,7 +241,7 @@ float ComputeFadeOutMXAO()
 		HALLOWEEN_FADEOUT,
 		NULL_FADEOUT
 	};
-	
+
 	return lerp(weathers[w0], weathers[w1], fadeoutTex.g);
 }
 
@@ -274,11 +274,11 @@ float ComputeStrenghtMXAO()
 		MXAO_H23,
 		MXAO_H0
 	};
-	
+
 	float3 timeTex = tex2D(sMXAO_ColorTex, float2(1.0, 0.0)).rgb;
-	
+
 	float hour = timeTex.r*255.0 + timeTex.g*255.0/60.0 + timeTex.b*255.0/3600.0;
-	
+
 	return lerp(hours[int(hour)], hours[(int(hour)+1)], timeTex.g*255.0/60.0);
 }
 
@@ -357,7 +357,7 @@ void GetBlurWeight(in float4 tempKey, in float4 centerKey, in float surfacealign
 	float depthdiff = abs(tempKey.w - centerKey.w);
 	float normaldiff = saturate(1.0 - dot(tempKey.xyz,centerKey.xyz));
 
-	weight = saturate(0.15 / surfacealignment - depthdiff) * saturate(0.65 - normaldiff); 
+	weight = saturate(0.15 / surfacealignment - depthdiff) * saturate(0.65 - normaldiff);
 	weight = saturate(weight * 4.0) * 2.0;
 }
 
@@ -396,7 +396,7 @@ float4 BlurFilter(in MXAO_VSOUT MXAO, in sampler inputsampler, float inputscale,
 	[loop]
 	for(int iStep = 0; iStep < blursteps; iStep++)
 	{
-			float2 sampleCoord = MXAO.texcoord.xy + blurOffsets[iStep] * PixelSize * radius / inputscale; 
+			float2 sampleCoord = MXAO.texcoord.xy + blurOffsets[iStep] * PixelSize * radius / inputscale;
 
 			GetBlurKeyAndSample(sampleCoord, inputscale, inputsampler, tempsample, tempkey);
 			GetBlurWeight(tempkey, centerkey, surfacealignment, tempweight);
@@ -515,15 +515,15 @@ void PS_Culling(in MXAO_VSOUT MXAO, out float4 color : SV_Target0)
 	randStep *= 0.0625;
 
 	float2 sampleUV, Dir;
-	sincos(38.39941 * randStep, Dir.x, Dir.y); 
+	sincos(38.39941 * randStep, Dir.x, Dir.y);
 
-	Dir *= scaledRadius;       
+	Dir *= scaledRadius;
 
 	[loop]
 	for(int iSample=0; iSample < MXAO.samples; iSample++)
-	{                
-		sampleUV = MXAO.scaledcoord.xy + Dir.xy * float2(1.0, AspectRatio) * (iSample + randStep);   
-		Dir.xy = mul(Dir.xy, float2x2(0.76465,-0.64444,0.64444,0.76465));             
+	{
+		sampleUV = MXAO.scaledcoord.xy + Dir.xy * float2(1.0, AspectRatio) * (iSample + randStep);
+		Dir.xy = mul(Dir.xy, float2x2(0.76465,-0.64444,0.64444,0.76465));
 
 		float sampleMIP = saturate(scaledRadius * iSample * 20.0) * 3.0;
 
@@ -546,7 +546,7 @@ void PS_StencilSetup(in MXAO_VSOUT MXAO, out float4 color : SV_Target0)
 		|| 0.25 * 0.5 * MXAO_SAMPLE_RADIUS / (tex2D(sMXAO_DepthTex,MXAO.scaledcoord.xy).x + 2.0) * BUFFER_HEIGHT < 1.0
 		|| MXAO.scaledcoord.x > 1.0
 		|| MXAO.scaledcoord.y > 1.0
-		|| !GetCullingMask(MXAO)        
+		|| !GetCullingMask(MXAO)
 		) discard;
 
     color = 1.0;
@@ -576,15 +576,15 @@ void PS_AmbientObscurance(in MXAO_VSOUT MXAO, out float4 color : SV_Target0)
 	randStep *= 0.0625;
 
 	float2 sampleUV, Dir;
-	sincos(38.39941 * randStep, Dir.x, Dir.y); 
+	sincos(38.39941 * randStep, Dir.x, Dir.y);
 
-	Dir *= scaledRadius;       
+	Dir *= scaledRadius;
 
 	[loop]
 	for(int iSample=0; iSample < MXAO.samples; iSample++)
-	{                
-		sampleUV = MXAO.scaledcoord.xy + Dir.xy * float2(1.0, AspectRatio) * (iSample + randStep);   
-		Dir.xy = mul(Dir.xy, float2x2(0.76465,-0.64444,0.64444,0.76465));             
+	{
+		sampleUV = MXAO.scaledcoord.xy + Dir.xy * float2(1.0, AspectRatio) * (iSample + randStep);
+		Dir.xy = mul(Dir.xy, float2x2(0.76465,-0.64444,0.64444,0.76465));
 
 		float sampleMIP = saturate(scaledRadius * iSample * 20.0) * 3.0;
 
@@ -646,7 +646,7 @@ void PS_BlurYandCombine(in MXAO_VSOUT MXAO, out float4 color : SV_Target0)
         float3 lumcoeff         = float3(0.2126, 0.7152, 0.0722);
         float colorgray         = dot(color.rgb,lumcoeff);
         float blendfact         = 1.0 - colorgray;
-		
+
 		float mxao_amount		= ComputeStrenghtMXAO();
 
 #if(MXAO_ENABLE_IL != 0)
