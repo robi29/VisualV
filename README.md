@@ -48,7 +48,7 @@ Previous versions of VisualV are available here:
 https://www.mediafire.com/folder/vrv4z3navwafa/VisualV 
 
 # Known bugs
-- Advanced motion blur is not compatibile with NaturalVision Remastered scripts (game doesn't allow to use more than one timecyc modifier using natives).
+- Advanced motion blur is not compatibile with NaturalVision Remastered scripts (game doesn't allow to use more than one timecycle modifier using natives).
 
 # View the topic on GTAForums
 http://gtaforums.com/topic/792891-vwipvisualv
@@ -61,7 +61,7 @@ Copy all files in "ENB settings" to root folder of Grand Theft Auto V (e.g. C:\G
 # ReShade installation
 If you want to use our ReShade preset, go through these steps:
 1. Copy our preset from "optionals/ReShade preset" to main folder of GTAV.
-2. Change name of ReShade64.dll to dxgi.dll, if you want to use it without ENB.
+2. Change name of ReShade64.dll to dxgi.dll.
 
 How to control effects:
 - Press F9 to enable/disable ambient light.
@@ -69,12 +69,12 @@ How to control effects:
 - Press F11 to enable/disable heat haze effect.
 
 # ENB Series + ReShade
-If you want to have ENB Series and ReShade preset at the same time, you have to change name of file dxgi.dll to ReShade64.dll, then in enblocal.ini change "EnableProxyLibrary" to true, "InitProxyFunctions" to false and "ProxyLibrary" value to ReShade64.dll.
+If you want to have ENB Series and ReShade preset at the same time, you have to change "EnableProxyLibrary" to true, "InitProxyFunctions" to false and "ProxyLibrary" value to d3d11.dll.
 
 For example:
 ```
 [PROXY]
 EnableProxyLibrary=true
 InitProxyFunctions=false
-ProxyLibrary=ReShade64.dll
+ProxyLibrary=d3d11.dll
 ```
