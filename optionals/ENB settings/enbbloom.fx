@@ -11,48 +11,69 @@
 //+++++++++++++++++++++++++++++
 //internal parameters, modify or add new
 //+++++++++++++++++++++++++++++
-/*
-//example parameters with annotations for in-game editor
-float	ExampleScalar
+float	EFalloff
 <
-	string UIName="Example scalar";
-	string UIWidget="spinner";
+	string UIName="Falloff";
+	string UIWidget="Spinner";
 	float UIMin=0.0;
-	float UIMax=1000.0;
-> = {1.0};
+	float UIMax=1.0;
+> = {0.0};
 
-float3	ExampleColor
+int	EFalloffType
 <
-	string UIName = "Example color";
-	string UIWidget = "color";
-> = {0.0, 1.0, 0.0};
-
-float4	ExampleVector
-<
-	string UIName="Example vector";
-	string UIWidget="vector";
-> = {0.0, 1.0, 0.0, 0.0};
-
-int	ExampleQuality
-<
-	string UIName="Example quality";
-	string UIWidget="quality";
+	string UIName="Falloff Type";
+	string UIWidget="Spinner";
 	int UIMin=0;
-	int UIMax=3;
-> = {1};
+	int UIMax=5;
+> = {0};
 
-Texture2D ExampleTexture
+float	EOctaveWeight1
 <
-	string UIName = "Example texture";
-	string ResourceName = "test.bmp";
->;
-SamplerState ExampleSampler
-{
-	Filter = MIN_MAG_MIP_LINEAR;
-	AddressU = Clamp;
-	AddressV = Clamp;
-};
-*/
+	string UIName="Octave weight 1";
+	string UIWidget="Spinner";
+	float UIMin=-0.3;
+	float UIMax=1.0;
+> = {0.027};
+
+float	EOctaveWeight2
+<
+	string UIName="Octave weight 2";
+	string UIWidget="Spinner";
+	float UIMin=-0.3;
+	float UIMax=1.0;
+> = {0.11};
+
+float	EOctaveWeight3
+<
+	string UIName="Octave weight 3";
+	string UIWidget="Spinner";
+	float UIMin=-0.3;
+	float UIMax=1.0;
+> = {0.25};
+
+float	EOctaveWeight4
+<
+	string UIName="Octave weight 4";
+	string UIWidget="Spinner";
+	float UIMin=-0.3;
+	float UIMax=1.0;
+> = {0.44};
+
+float	EOctaveWeight5
+<
+	string UIName="Octave weight 5";
+	string UIWidget="Spinner";
+	float UIMin=-0.3;
+	float UIMax=1.0;
+> = {0.7};
+
+float	EOctaveWeight6
+<
+	string UIName="Octave weight 6";
+	string UIWidget="Spinner";
+	float UIMin=-0.3;
+	float UIMax=1.0;
+> = {1.0};
 
 
 
@@ -98,6 +119,8 @@ float4	tempInfo1;
 // xy = cursor position of previous left mouse button click
 // zw = cursor position of previous right mouse button click
 float4	tempInfo2;
+//x = Width, y = 1/Width, z = aspect, w = 1/aspect, aspect is Width/Height
+float4	BloomSize;
 
 
 
@@ -153,17 +176,34 @@ struct VS_OUTPUT_POST
 
 
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//helper function
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+float4	texBiquadratic(Texture2D tex, SamplerState smp, float2 texsize, float2 invtexsize, float2 uv)
+{
+	float2	q = frac(uv * texsize);
+	float2	c = (q*(q - 1.0) + 0.5) * invtexsize;
+	float2	w0 = uv - c;
+	float2	w1 = uv + c;
+	float4	s =
+		  tex.Sample(smp, float2(w0.x, w0.y))
+		+ tex.Sample(smp, float2(w0.x, w1.y))
+		+ tex.Sample(smp, float2(w1.x, w1.y))
+		+ tex.Sample(smp, float2(w1.x, w0.y));
+	return s * 0.25;
+}
+
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 VS_OUTPUT_POST	VS_Quad(VS_INPUT_POST IN)
 {
 	VS_OUTPUT_POST	OUT;
-	float4	pos;
-	pos.xyz=IN.pos.xyz;
-	pos.w=1.0;
-	OUT.pos=pos;
-	OUT.txcoord0.xy=IN.txcoord.xy;
+	OUT.pos.xyz = IN.pos.xyz;
+	OUT.pos.w = 1.0;
+	OUT.txcoord0.xy = IN.txcoord.xy;
 	return OUT;
 }
 
@@ -215,63 +255,107 @@ float3	FuncBlur(Texture2D inputtex, float2 uvsrc, float srcsize, float destsize)
 		}
 		pos.x+=fstepcount.x;
 	}
-	curr.xyz/=curr.w;
-
-	//curr.xyz=inputtex.Sample(Sampler1, uvsrc.xy);
+	curr.xyz *= 1.0/curr.w;
 
 	return curr.xyz;
 }
 
 
 
-//example 1. draw in single pass directly to bloom texture of 1024*1024 size
-float4	PS_ExampleBloom1(VS_OUTPUT_POST IN, float4 v0 : SV_Position0,
-	uniform Texture2D inputtex, uniform float srcsize, uniform float destsize) : SV_Target
-{
-	float4	res;
-
-	res.xyz=FuncBlur(inputtex, IN.txcoord0.xy, srcsize, destsize);
-
-	res=max(res, 0.0);
-	res=min(res, 16384.0);
-
-	res.w=1.0;
-	return res;
-}
-
-
-
-//example 2. draw in several passes to different render targets
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//draw in several passes to different render targets
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 float4	PS_Resize(VS_OUTPUT_POST IN, float4 v0 : SV_Position0,
 	uniform Texture2D inputtex, uniform float srcsize, uniform float destsize) : SV_Target
 {
 	float4	res;
 
-	res.xyz=FuncBlur(inputtex, IN.txcoord0.xy, srcsize, destsize);
+	res.xyz = FuncBlur(inputtex, IN.txcoord0.xy, srcsize, destsize);
 
-	res=max(res, 0.0);
-	res=min(res, 16384.0);
+	res = max(res, 0.0);
+	res = min(res, 32768.0);
 
-	res.w=1.0;
+	res.w = 1.0;
 	return res;
 }
 
-float4	PS_BloomMix(VS_OUTPUT_POST IN, float4 v0 : SV_Position0) : SV_Target
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//last pass mix all textures
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+VS_OUTPUT_POST	VS_BloomPostPass(VS_INPUT_POST IN, out float4 table1 : TEXCOORD1, out float4 table2 : TEXCOORD2)
 {
-	float4	res;
+	VS_OUTPUT_POST	OUT;
+	OUT.pos.xyz = IN.pos.xyz;
+	OUT.pos.w = 1.0;
+	OUT.txcoord0.xy = IN.txcoord.xy;
 
-	res.xyz=RenderTarget512.Sample(Sampler1, IN.txcoord0.xy);
-	res.xyz+=RenderTarget256.Sample(Sampler1, IN.txcoord0.xy);
-	res.xyz+=RenderTarget128.Sample(Sampler1, IN.txcoord0.xy);
-	res.xyz+=RenderTarget64.Sample(Sampler1, IN.txcoord0.xy);
-	res.xyz+=RenderTarget32.Sample(Sampler1, IN.txcoord0.xy);
-	res.xyz*=0.2;
+//	table1 = float4(0.027, 0.11, 0.25, 0.44);
+//	table2 = float4(0.7, 1.0, 0.0, 0.0);
+	table1.x = EOctaveWeight1;
+	table1.y = EOctaveWeight2;
+	table1.z = EOctaveWeight3;
+	table1.w = EOctaveWeight4;
+	table2.x = EOctaveWeight5;
+	table2.y = EOctaveWeight6;
 
-	res=max(res, 0.0);
-	res=min(res, 16384.0);
+	if (EFalloffType == 1)
+	{
+		table1 = float4(0.001, 0.11, 0.25, 0.44);
+		table2 = float4(0.7, 1.0, 0.0, 0.0);
+	}
+	if (EFalloffType == 2)
+	{
+		table1 = float4(0.01, 0.2, 0.6, 1.0);
+		table2 = float4(0.6, 0.1, 0.0, 0.0);
+	}
+	if (EFalloffType == 3)
+	{
+		table1 = float4(0.0, 0.01, 0.2, 0.6);
+		table2 = float4(0.2, 0.01, 0.0, 0.0);
+	}
+	if (EFalloffType == 4)
+	{
+		table1 = float4(0.05, 0.8, 0.4, 0.1);
+		table2 = float4(0.05, 0.01, 0.0, 0.0);
+	}
+	if (EFalloffType == 5)
+	{
+		table1 = float4(0.0,0.01,-0.3, 0.7);
+		table2 = float4(0.2, 0.1, 0.0, 0.0);
+	}
 
-	res.w=1.0;
-	return res;
+	float	falloff = 1.0 - EFalloff;
+	falloff = falloff * falloff;
+	table1 = lerp(table1, 1.0, falloff);
+	table2 = lerp(table2, 1.0, falloff);
+
+	return OUT;
+}
+
+
+
+float4	PS_BloomPostPass(VS_OUTPUT_POST IN, in float4 table1 : TEXCOORD1, in float4 table2 : TEXCOORD2, float4 vPos : SV_Position0) : SV_Target
+{
+	float4	bloom;
+	float	weight;
+
+	bloom.xyz = RenderTarget512.Sample(Sampler1, IN.txcoord0.xy) * table1.x;
+	bloom.xyz+= texBiquadratic(RenderTarget256, Sampler1, 256.0, 1.0/256.0, IN.txcoord0.xy) * table1.y;
+	bloom.xyz+= texBiquadratic(RenderTarget128, Sampler1, 128.0, 1.0/128.0, IN.txcoord0.xy) * table1.z;
+	bloom.xyz+= texBiquadratic(RenderTarget64, Sampler1, 64.0, 1.0/64.0, IN.txcoord0.xy) * table1.w;
+	bloom.xyz+= texBiquadratic(RenderTarget32, Sampler1, 32.0, 1.0/32.0, IN.txcoord0.xy) * table2.x;
+	bloom.xyz+= texBiquadratic(RenderTarget16, Sampler1, 16.0, 1.0/16.0, IN.txcoord0.xy) * table2.y;
+
+	weight = dot(table1, 1.0) + dot(table2, 1.0);
+	bloom.xyz *= 1.0/weight;
+
+	bloom = max(bloom, 0.0);
+	bloom = min(bloom, 32768.0);
+
+	bloom.w = 1.0;
+	return bloom;
 }
 
 
@@ -282,20 +366,7 @@ float4	PS_BloomMix(VS_OUTPUT_POST IN, float4 v0 : SV_Position0) : SV_Target
 // of techniques is limited to 255.  If UIName is specified, then it
 // is a base technique which may have extra techniques with indexing
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//bloom example 1, draw in single pass, very performance heavy and low blurring range
-technique11 SinglePassBloom <string UIName="Single pass bloom";>
-{
-	pass p0
-	{
-		SetVertexShader(CompileShader(vs_5_0, VS_Quad()));
-		SetPixelShader(CompileShader(ps_5_0, PS_ExampleBloom1(TextureDownsampled, 1024.0, 1024.0)));
-	}
-}
-
-
-
-//bloom example 2, draw using several techniques and several render targets
-technique11 MultiPassBloom <string UIName="Multipass bloom"; string RenderTarget="RenderTarget512";>
+technique11 Draw <string UIName="Multipass bloom"; string RenderTarget="RenderTarget512";>
 {
 	pass p0
 	{
@@ -304,7 +375,7 @@ technique11 MultiPassBloom <string UIName="Multipass bloom"; string RenderTarget
 	}
 }
 
-technique11 MultiPassBloom1 <string RenderTarget="RenderTarget256";>
+technique11 Draw1 <string RenderTarget="RenderTarget256";>
 {
 	pass p0
 	{
@@ -313,7 +384,7 @@ technique11 MultiPassBloom1 <string RenderTarget="RenderTarget256";>
 	}
 }
 
-technique11 MultiPassBloom2 <string RenderTarget="RenderTarget128";>
+technique11 Draw2 <string RenderTarget="RenderTarget128";>
 {
 	pass p0
 	{
@@ -322,7 +393,7 @@ technique11 MultiPassBloom2 <string RenderTarget="RenderTarget128";>
 	}
 }
 
-technique11 MultiPassBloom3 <string RenderTarget="RenderTarget64";>
+technique11 Draw3 <string RenderTarget="RenderTarget64";>
 {
 	pass p0
 	{
@@ -331,7 +402,7 @@ technique11 MultiPassBloom3 <string RenderTarget="RenderTarget64";>
 	}
 }
 
-technique11 MultiPassBloom4 <string RenderTarget="RenderTarget32";>
+technique11 Draw4 <string RenderTarget="RenderTarget32";>
 {
 	pass p0
 	{
@@ -339,12 +410,21 @@ technique11 MultiPassBloom4 <string RenderTarget="RenderTarget32";>
 		SetPixelShader(CompileShader(ps_5_0, PS_Resize(RenderTarget64, 64.0, 32.0)));
 	}
 }
-//in last pass output to bloom texture
-technique11 MultiPassBloom5
+
+technique11 Draw5 <string RenderTarget="RenderTarget16";>
 {
 	pass p0
 	{
 		SetVertexShader(CompileShader(vs_5_0, VS_Quad()));
-		SetPixelShader(CompileShader(ps_5_0, PS_BloomMix()));
+		SetPixelShader(CompileShader(ps_5_0, PS_Resize(RenderTarget64, 32.0, 16.0)));
+	}
+}
+
+technique11 Draw6
+{
+	pass p0
+	{
+		SetVertexShader(CompileShader(vs_5_0, VS_BloomPostPass()));
+		SetPixelShader(CompileShader(ps_5_0, PS_BloomPostPass()));
 	}
 }

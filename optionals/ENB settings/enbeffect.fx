@@ -4,15 +4,44 @@
 // Author: Boris Vorontsov
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+//post processing mode. Change value (could be 1, 2, 3, 4). Every mode have own internal parameters, look below
+#ifndef POSTPROCESS
+ #define POSTPROCESS	2
+#endif
+
 //+++++++++++++++++++++++++++++
 //internal parameters, modify or add new
 //+++++++++++++++++++++++++++++
 //modify these values to tweak various color processing
+//POSTPROCESS 1
 float	EAdaptationMinV1=0.01;
-float	EAdaptationMaxV1=0.12;
-float	EContrastV1=1.3;
-float	EColorSaturationV1=1.3;
-float	EToneMappingCurveV1=3.0;
+float	EAdaptationMaxV1=0.07;
+float	EContrastV1=0.95;
+float	EColorSaturationV1=1.0;
+float	EToneMappingCurveV1=6.0;
+
+//POSTPROCESS 2
+//float	EBrightnessV2=2.5;
+float	EAdaptationMinV2=0.05;
+float	EAdaptationMaxV2=0.05;//0.125;
+float	EToneMappingCurveV2=8.0;
+float	EIntensityContrastV2=1.0;
+float	EColorSaturationV2=1.0;
+float	EToneMappingOversaturationV2=180.0;
+
+//POSTPROCESS 3
+float	EAdaptationMinV3=0.05;
+float	EAdaptationMaxV3=0.125;
+float	EToneMappingCurveV3=4.0;
+float	EToneMappingOversaturationV3=60.0;
+
+//POSTPROCESS 4
+float	EAdaptationMinV4=0.2;
+float	EAdaptationMaxV4=0.125;
+float	EBrightnessCurveV4=0.7;
+float	EBrightnessMultiplierV4=0.45;
+float	EBrightnessToneMappingCurveV4=0.5;
 /*
 //example parameters with annotations for in-game editor
 float	ExampleScalar
@@ -393,108 +422,145 @@ VS_OUTPUT_POST	VS_Draw(VS_INPUT_POST IN)
 
 float4	PS_Draw(VS_OUTPUT_POST IN, float4 v0 : SV_Position0) : SV_Target
 {
-	/*float4	res;
+	float4	res;
 	float4	color;
 
 	color=TextureColor.Sample(Sampler0, IN.txcoord0.xy); //hdr scene color
 
-	//float3	lens;
-	//lens.xyz=TextureLens.Sample(Sampler1, IN.txcoord0.xy).xyz;
-	//color.xyz+=lens.xyz * ENBParams01.y; //lens amount
+	float3	lens;
+	lens.xyz=TextureLens.Sample(Sampler1, IN.txcoord0.xy).xyz;
+	color.xyz+=lens.xyz * ENBParams01.y; //lens amount
 
-	//float3	bloom=TextureBloom.Sample(Sampler1, IN.txcoord0.xy);
-	//bloom.xyz=bloom-color;
-	//bloom.xyz=max(bloom, 0.0);
-	//color.xyz+=bloom*ENBParams01.x; //bloom amount
+	float3	bloom=TextureBloom.Sample(Sampler1, IN.txcoord0.xy);
+
+	bloom.xyz=bloom-color;
+	bloom.xyz=max(bloom, 0.0);
+	color.xyz+=bloom*ENBParams01.x; //bloom amount
 
 	float	grayadaptation=TextureAdaptation.Sample(Sampler0, IN.txcoord0.xy).x;
+
+#if (POSTPROCESS==1)
 
 	grayadaptation=max(grayadaptation, 0.0);
 	grayadaptation=min(grayadaptation, 50.0);
 	color.xyz=color.xyz/(grayadaptation*EAdaptationMaxV1+EAdaptationMinV1);
 
-	float cgray=dot(color.xyz, float3(0.299, 0.587, 0.114));
+	float cgray=dot(color.xyz, float3(0.27, 0.67, 0.06));
 	cgray=pow(cgray, EContrastV1);
 	float3 poweredcolor=pow(color.xyz, EColorSaturationV1);
-	float newgray=dot(poweredcolor.xyz, float3(0.299, 0.587, 0.114));
+	float newgray=dot(poweredcolor.xyz, float3(0.27, 0.67, 0.06));
 	color.xyz=poweredcolor.xyz*cgray/(newgray+0.0001);
 
 	float3	luma=color.xyz;
 	float	lumamax=300.0;
 	color.xyz=(color.xyz * (1.0 + color.xyz/lumamax))/(color.xyz + EToneMappingCurveV1);
 
+#endif
+
+
+
+#if (POSTPROCESS==2)
+
+	grayadaptation=max(grayadaptation, 0.0);
+	grayadaptation=min(grayadaptation, 50.0);
+	color.xyz=color.xyz/(grayadaptation*EAdaptationMaxV2+EAdaptationMinV2);
+
+	//color.xyz*=EBrightnessV2;
+	color.xyz+=0.000001;
+	float3 xncol=normalize(color.xyz);
+	float3 scl=color.xyz/xncol.xyz;
+	scl=pow(scl, EIntensityContrastV2);
+	xncol.xyz=pow(xncol.xyz, EColorSaturationV2);
+	color.xyz=scl*xncol.xyz;
+
+	float	lumamax=EToneMappingOversaturationV2;
+	color.xyz=(color.xyz * (1.0 + color.xyz/lumamax))/(color.xyz + EToneMappingCurveV2);
+
+#endif
+
+
+#if (POSTPROCESS==3)
+
+	grayadaptation=max(grayadaptation, 0.0);
+	grayadaptation=min(grayadaptation, 50.0);
+	color.xyz=color.xyz/(grayadaptation*EAdaptationMaxV3+EAdaptationMinV3);
+
+	float	lumamax=EToneMappingOversaturationV3;
+	color.xyz=(color.xyz * (1.0 + color.xyz/lumamax))/(color.xyz + EToneMappingCurveV3);
+
+#endif
+
+
+#if (POSTPROCESS==4)
+
+	grayadaptation=max(grayadaptation, 0.0);
+	grayadaptation=min(grayadaptation, 50.0);
+	color.xyz=color.xyz/(grayadaptation*EAdaptationMaxV4+EAdaptationMinV4);
+
+	float Y = dot(color.xyz, float3(0.299, 0.587, 0.114)); //0.299 * R + 0.587 * G + 0.114 * B;
+	float U = dot(color.xyz, float3(-0.14713, -0.28886, 0.436)); //-0.14713 * R - 0.28886 * G + 0.436 * B;
+	float V = dot(color.xyz, float3(0.615, -0.51499, -0.10001)); //0.615 * R - 0.51499 * G - 0.10001 * B;
+	Y=pow(Y, EBrightnessCurveV4);
+	Y=Y*EBrightnessMultiplierV4;
+//	Y=Y/(Y+EBrightnessToneMappingCurveV4);
+//	float	desaturatefact=saturate(Y*Y*Y*1.7);
+//	U=lerp(U, 0.0, desaturatefact);
+//	V=lerp(V, 0.0, desaturatefact);
+	color.xyz=V * float3(1.13983, -0.58060, 0.0) + U * float3(0.0, -0.39465, 2.03211) + Y;
+
+	color.xyz=max(color.xyz, 0.0);
+	color.xyz=color.xyz/(color.xyz+EBrightnessToneMappingCurveV4);
+
+#endif
+
+
+
+#ifdef E_CC_PROCEDURAL
+	//activated by UseProceduralCorrection=true
+	float	tempgray;
+	float4	tempvar;
+	float3	tempcolor;
+
+	//+++ levels like in photoshop, including gamma, lightness, additive brightness
+	color=max(color-ECCInBlack, 0.0) / max(ECCInWhite-ECCInBlack, 0.0001);
+	if (ECCGamma!=1.0) color=pow(color, ECCGamma);
+	color=color*(ECCOutWhite-ECCOutBlack) + ECCOutBlack;
+
+	//+++ brightness
+	color=color*ECCBrightness;
+
+	//+++ contrast
+	color=(color-ECCContrastGrayLevel) * ECCContrast + ECCContrastGrayLevel;
+
+	//+++ saturation
+	tempgray=dot(color.xyz, 0.3333);
+	color=lerp(tempgray, color, ECCSaturation);
+
+	//+++ desaturate shadows
+	tempgray=dot(color.xyz, 0.3333);
+	tempvar.x=saturate(1.0-tempgray);
+	tempvar.x*=tempvar.x;
+	tempvar.x*=tempvar.x;
+	color=lerp(color, tempgray, ECCDesaturateShadows*tempvar.x);
+
+	//+++ color balance
+	color=saturate(color);
+	tempgray=dot(color.xyz, 0.3333);
+	float2	shadow_highlight=float2(1.0-tempgray, tempgray);
+	shadow_highlight*=shadow_highlight;
+	color.rgb+=(ECCColorBalanceHighlights*2.0-1.0)*color * shadow_highlight.x;
+	color.rgb+=(ECCColorBalanceShadows*2.0-1.0)*(1.0-color) * shadow_highlight.y;
+
+	//+++ channel mixer
+	tempcolor=color;
+	color.r=dot(tempcolor, ECCChannelMixerR);
+	color.g=dot(tempcolor, ECCChannelMixerG);
+	color.b=dot(tempcolor, ECCChannelMixerB);
+#endif //E_CC_PROCEDURAL
+
 	color.xyz=pow(color.xyz, 1.0/2.2);
 
 	res.xyz=saturate(color);
-	res.w=1.0;
-	return res;*/
-	
-	float4	res;
-
-	float4	r0, r1, r2, r3;
-
-	r0=TextureColor.Sample(Sampler0, IN.txcoord0.xy); //hdr scene color
-
-	float	adaptation=TextureAdaptation.Sample(Sampler0, IN.txcoord0.xy).x;
-
-	// vignetting
-	/*r1.xy = IN.txcoord0.xy - 0.5;
-	r0.w = dot(r1.xy, r1.xy);
-	r0.w = 1.0 - r0.w;
-	r0.w = log2(r0.w);
-	r0.w = VignettingParams.y * r0.w;
-	r0.w = exp2(r0.w);
-	r0.w = saturate(VignettingParams.x + r0.w);
-	r0.w = saturate(VignettingParams.z * r0.w);
-	r1.xyz = float3(1.0, 1.0, 1.0) - VignettingColor.xyz;
-	r1.xyz = r0.w * r1.xyz + VignettingColor.xyz;
-	r0.xyz = r1.xyz * r0.xyz;*/
-	
-	
-	r0.xyz = min(float3(65504.0, 65504.0, 65504.0), r0.xyz);
-	r0.w = saturate(adaptation * TonemapParams.x + TonemapParams.y);
-	r1.xyzw = DarkTonemapParams0.xyzw - BrightTonemapParams0.xyzw;
-	r1.xyzw = r0.w * r1.xyzw + BrightTonemapParams0.xyzw;
-	r2.xyz = DarkTonemapParams1.zxy - BrightTonemapParams1.zxy;
-	r2.xyz = r0.w * r2.xyz + BrightTonemapParams1.zxy;
-	r3.xy = r2.yz * r1.w;
-	r0.w = r1.z * r1.y;
-	r1.z = r1.x * r2.x + r0.w;
-	r1.z = r2.x * r1.z + r3.x;
-	r1.w = r1.x * r2.x + r1.y;
-	r1.w = r2.x * r1.w + r3.y;
-	r1.z = r1.z / r1.w;
-	r1.w = r2.y / r2.z;
-	r1.z = r1.z - r1.w;
-	r1.z = 1.0 / r1.z;
-	r0.xyz = adaptation * r0.xyz;
-	r0.xyz = max(float3(0.0, 0.0, 0.0), r0.xyz);
-	r2.xyz = r1.xxx * r0.xyz + r0.w;
-	r2.xyz = r0.xyz * r2.xyz + r3.x;
-	r3.xzw = r1.xxx * r0.xyz + r1.y;
-	r0.xyz = r0.xyz * r3.xzw + r3.y;
-	r0.xyz = r2.xyz / r0.xyz;
-	r0.xyz = r0.xyz - r1.w;
-	r0.xyz = saturate(r0.xyz * r1.z);
-	r0.w = dot(r0.xyz, float3(0.2125, 0.7154, 0.0721));
-	r0.xyz = r0.xyz - r0.w;
-	r0.xyz = Desaturate * r0.xyz + r0.w;
-	r1.x = saturate(r0.w / ColorShiftLowLum.w);
-	r1.yzw = -ColorShiftLowLum.xyz + ColorCorrectHighLum.xyz;
-	r1.xyz = r1.xxx * r1.yzw + ColorShiftLowLum.xyz;
-	r2.xyz = r1.xyz * r0.xyz;
-	r1.w = 1.0 - ColorCorrectHighLum.w;
-	r0.w = -r1.w + r0.w;
-	r1.w = 1.0 - r1.w;
-	r1.w = max(0.01, r1.w);
-	r0.w = saturate(r0.w / r1.w);
-	r0.xyz = -r0.xyz * r1.xyz + r0.xyz;
-	r0.xyz = saturate(r0.w * r0.xyz + r2.xyz);
-	r0.xyz = log2(r0.xyz);
-	r0.xyz = Gamma * r0.xyz;
-	r0.xyz = exp2(r0.xyz);
-
-	res.xyz = r0.xyz;
 	res.w=1.0;
 	return res;
 }
@@ -512,10 +578,17 @@ float4	PS_DrawOriginal(VS_OUTPUT_POST IN, float4 v0 : SV_Position0) : SV_Target
 
 	r0=TextureColor.Sample(Sampler0, IN.txcoord0.xy); //hdr scene color
 
-	float	adaptation=TextureAdaptation.Sample(Sampler0, IN.txcoord0.xy).x;
+	float3	lens=TextureLens.Sample(Sampler1, IN.txcoord0.xy).xyz;
+	r0.xyz+=lens.xyz * ENBParams01.y; //lens amount
 
-	// vignetting
-	/*r1.xy = IN.txcoord0.xy - 0.5;
+	float3	bloom=TextureBloom.Sample(Sampler1, IN.txcoord0.xy);
+	bloom.xyz=bloom-r0;
+	bloom.xyz=max(bloom, 0.0);
+	r0.xyz+=bloom*ENBParams01.x; //bloom amount
+
+	float4	adaptation=TextureAdaptation.Sample(Sampler0, IN.txcoord0.xy);
+
+	r1.xy = IN.txcoord0.xy - 0.5;
 	r0.w = dot(r1.xy, r1.xy);
 	r0.w = 1.0 - r0.w;
 	r0.w = log2(r0.w);
@@ -525,11 +598,9 @@ float4	PS_DrawOriginal(VS_OUTPUT_POST IN, float4 v0 : SV_Position0) : SV_Target
 	r0.w = saturate(VignettingParams.z * r0.w);
 	r1.xyz = float3(1.0, 1.0, 1.0) - VignettingColor.xyz;
 	r1.xyz = r0.w * r1.xyz + VignettingColor.xyz;
-	r0.xyz = r1.xyz * r0.xyz;*/
-	
-	
+	r0.xyz = r1.xyz * r0.xyz;
 	r0.xyz = min(float3(65504.0, 65504.0, 65504.0), r0.xyz);
-	r0.w = saturate(adaptation * TonemapParams.x + TonemapParams.y);
+	r0.w = saturate(adaptation.y * TonemapParams.x + TonemapParams.y);
 	r1.xyzw = DarkTonemapParams0.xyzw - BrightTonemapParams0.xyzw;
 	r1.xyzw = r0.w * r1.xyzw + BrightTonemapParams0.xyzw;
 	r2.xyz = DarkTonemapParams1.zxy - BrightTonemapParams1.zxy;
@@ -544,7 +615,7 @@ float4	PS_DrawOriginal(VS_OUTPUT_POST IN, float4 v0 : SV_Position0) : SV_Target
 	r1.w = r2.y / r2.z;
 	r1.z = r1.z - r1.w;
 	r1.z = 1.0 / r1.z;
-	r0.xyz = adaptation * r0.xyz;
+	r0.xyz = adaptation.x * r0.xyz;
 	r0.xyz = max(float3(0.0, 0.0, 0.0), r0.xyz);
 	r2.xyz = r1.xxx * r0.xyz + r0.w;
 	r2.xyz = r0.xyz * r2.xyz + r3.x;
