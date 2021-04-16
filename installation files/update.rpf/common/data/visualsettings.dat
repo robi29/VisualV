@@ -1,4 +1,4 @@
-# VisualV 1.0.500
+# VisualV 1.0.510
 # DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS!
 #
 # stores intial values for configuration of in game elements
@@ -479,8 +479,8 @@ car.extralight.night.emissive.on	9.00
 car.extralight.day.emissive.off	0.001
 car.extralight.night.emissive.off	0.001
 car.emissiveMultiplier	2.00
-car.sirenlight.day.emissive.on		500.00
-car.sirenlight.night.emissive.on	500.00
+car.sirenlight.day.emissive.on		150.00
+car.sirenlight.night.emissive.on	150.00
 car.sirenlight.day.emissive.off		0.05
 car.sirenlight.night.emissive.off	0.04
 car.emissiveMultiplier 2.00

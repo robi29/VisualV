@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- VisualV 1.0.500 -->
+<!-- VisualV 1.0.510 -->
 <!-- DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS! -->
 <timecycle_modifier_data version="1.000000">
 	<modifier name="lightpolution" numMods="0" userFlags="0" />
@@ -14759,5 +14759,529 @@
     <fog_density>100.000 250.000</fog_density>
     <reflection_tweak_exterior_amb>0.000 0.000</reflection_tweak_exterior_amb>
     <reflection_tweak_emissive>0.000 0.000</reflection_tweak_emissive>
+  </modifier>
+  <modifier name="h4_beachparty" numMods="30" userFlags="0">
+    <light_dir_col_r>0.929 1.000</light_dir_col_r>
+    <light_dir_col_g>0.553 1.000</light_dir_col_g>
+    <light_dir_col_b>0.247 1.000</light_dir_col_b>
+    <light_dir_mult>32.000 1.000</light_dir_mult>
+    <light_natural_amb_down_col_r>0.035 1.000</light_natural_amb_down_col_r>
+    <light_natural_amb_down_col_g>0.318 1.000</light_natural_amb_down_col_g>
+    <light_natural_amb_down_col_b>1.000 1.000</light_natural_amb_down_col_b>
+    <light_natural_amb_up_col_r>1.000 1.000</light_natural_amb_up_col_r>
+    <light_natural_amb_up_col_g>0.843 1.000</light_natural_amb_up_col_g>
+    <light_natural_amb_up_col_b>0.459 1.000</light_natural_amb_up_col_b>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-1.000 0.000</sun_direction_x>
+    <sun_direction_y>-0.318 0.000</sun_direction_y>
+    <sun_direction_z>0.100 0.000</sun_direction_z>
+    <fog_col_r>1.000 1.000</fog_col_r>
+    <fog_col_g>0.498 1.000</fog_col_g>
+    <fog_col_b>0.373 1.000</fog_col_b>
+    <fog_col_a>1.000 1.000</fog_col_a>
+    <fog_east_col_r>0.071 1.000</fog_east_col_r>
+    <fog_east_col_g>0.176 1.000</fog_east_col_g>
+    <fog_east_col_b>0.773 1.000</fog_east_col_b>
+    <fog_east_col_a>0.992 1.000</fog_east_col_a>
+    <fog_density>30.000 30.000</fog_density>
+    <fog_falloff>30.000 30.000</fog_falloff>
+    <fog_base_height>0.000 0.000</fog_base_height>
+    <fog_haze_col_r>0.000 1.000</fog_haze_col_r>
+    <fog_haze_col_g>0.004 1.000</fog_haze_col_g>
+    <fog_haze_col_b>0.106 1.000</fog_haze_col_b>
+    <fog_haze_density>55.000 5.000</fog_haze_density>
+  </modifier>
+  <modifier name="h4_beachparty_day" numMods="20" userFlags="0">
+    <light_dir_col_r>0.929 1.000</light_dir_col_r>
+    <light_dir_col_g>0.773 1.000</light_dir_col_g>
+    <light_dir_col_b>0.439 1.000</light_dir_col_b>
+    <light_dir_mult>64.000 1.000</light_dir_mult>
+    <light_directional_amb_intensity_mult>5.000 0.000</light_directional_amb_intensity_mult>
+    <light_directional_amb_bounce_enabled>1.000 0.000</light_directional_amb_bounce_enabled>
+    <light_natural_amb_down_col_r>0.035 1.000</light_natural_amb_down_col_r>
+    <light_natural_amb_down_col_g>0.318 1.000</light_natural_amb_down_col_g>
+    <light_natural_amb_down_col_b>1.000 1.000</light_natural_amb_down_col_b>
+    <light_natural_amb_down_intensity>6.250 0.000</light_natural_amb_down_intensity>
+    <light_natural_amb_up_col_r>1.000 1.000</light_natural_amb_up_col_r>
+    <light_natural_amb_up_col_g>0.843 1.000</light_natural_amb_up_col_g>
+    <light_natural_amb_up_col_b>0.459 1.000</light_natural_amb_up_col_b>
+    <light_natural_amb_up_intensity>4.000 0.000</light_natural_amb_up_intensity>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.234 0.000</sun_direction_x>
+    <sun_direction_y>0.612 0.000</sun_direction_y>
+    <sun_direction_z>1.000 0.000</sun_direction_z>
+    <postfx_intensity_bloom>0.050 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="DLC_Island_Office" numMods="23" userFlags="0">
+    <light_amb_down_wrap>1.000 0.000</light_amb_down_wrap>
+    <light_natural_push>0.050 0.000</light_natural_push>
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.216 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.247 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>1.200 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.302 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.090 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>2.500 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.090 1.000</ped_light_col_g>
+    <ped_light_col_b>0.035 1.000</ped_light_col_b>
+    <ped_light_mult>0.150 1.000</ped_light_mult>
+    <ped_light_direction_z>1.000 0.000</ped_light_direction_z>
+    <ssao_inten>4.000 0.000</ssao_inten>
+    <postfx_exposure>-1.000 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh>2.460 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.100 0.000</postfx_intensity_bloom>
+    <natural_ambient_multiplier>0.010 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.010 0.000</artificial_int_ambient_multiplier>
+    <particle_emissive_intensity_mult>0.025 0.000</particle_emissive_intensity_mult>
+    <particle_light_intensity_mult>0.200 1.000</particle_light_intensity_mult>
+  </modifier>
+  <modifier name="dlc_island_vault" numMods="31" userFlags="2">
+    <light_dir_col_r>0.890 0.000</light_dir_col_r>
+    <light_dir_col_g>0.675 0.000</light_dir_col_g>
+    <light_dir_col_b>0.392 0.000</light_dir_col_b>
+    <light_dir_mult>0.000 1.000</light_dir_mult>
+    <light_directional_amb_intensity>0.000 0.000</light_directional_amb_intensity>
+    <light_directional_amb_intensity_mult>0.000 0.000</light_directional_amb_intensity_mult>
+    <light_directional_amb_bounce_enabled>0.000 0.000</light_directional_amb_bounce_enabled>
+    <light_amb_down_wrap>0.000 0.000</light_amb_down_wrap>
+    <light_natural_amb_down_intensity>0.000 0.000</light_natural_amb_down_intensity>
+    <light_natural_amb_up_intensity>0.000 0.000</light_natural_amb_up_intensity>
+    <light_natural_push>0.000 0.000</light_natural_push>
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.510 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.259 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.010 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.510 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.259 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.070 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.510 1.000</ped_light_col_g>
+    <ped_light_col_b>0.259 1.000</ped_light_col_b>
+    <ped_light_mult>0.200 1.000</ped_light_mult>
+    <ped_light_direction_z>1.000 0.000</ped_light_direction_z>
+    <ssao_inten>4.000 0.000</ssao_inten>
+    <postfx_exposure>-1.500 0.000</postfx_exposure>
+    <fog_start>73.000 73.000</fog_start>
+    <natural_ambient_multiplier>0.000 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.050 0.000</artificial_int_ambient_multiplier>
+    <no_rain_ripples>1.000 0.000</no_rain_ripples>
+    <fog_cut_off>1.000 0.000</fog_cut_off>
+  </modifier>
+  <modifier name="h4_sub_vehiclebay" numMods="38" userFlags="2">
+    <light_dir_mult>0.000 0.000</light_dir_mult>
+    <light_directional_amb_intensity>0.000 0.000</light_directional_amb_intensity>
+    <light_natural_amb_down_intensity>0.000 0.000</light_natural_amb_down_intensity>
+    <light_natural_amb_up_intensity>0.000 5.000</light_natural_amb_up_intensity>
+    <light_natural_push>0.000 0.000</light_natural_push>
+    <light_artificial_int_down_col_r>0.557 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.835 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>1.000 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.005 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.557 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.835 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>1.000 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.010 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>0.557 1.000</ped_light_col_r>
+    <ped_light_col_g>0.835 1.000</ped_light_col_g>
+    <ped_light_col_b>1.000 1.000</ped_light_col_b>
+    <ped_light_mult>0.250 1.000</ped_light_mult>
+    <ped_light_direction_x>-0.250 0.000</ped_light_direction_x>
+    <ped_light_direction_y>1.000 0.000</ped_light_direction_y>
+    <ped_light_direction_z>0.800 0.000</ped_light_direction_z>
+    <light_amb_occ_mult_ped>0.800 0.000</light_amb_occ_mult_ped>
+    <light_amb_volumes_in_diffuse>1.000 0.000</light_amb_volumes_in_diffuse>
+    <ssao_inten>3.000 0.000</ssao_inten>
+    <postfx_exposure>0.750 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh_width>0.000 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.000 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <bokeh_fade_max>0.500 0.000</bokeh_fade_max>
+    <sprite_brightness>1.000 0.000</sprite_brightness>
+    <sprite_size>1.000 0.000</sprite_size>
+    <fog_start>120.000 120.000</fog_start>
+    <reflection_interior_range>30.000 0.000</reflection_interior_range>
+    <reflection_tweak_interior_amb>8.000 0.000</reflection_tweak_interior_amb>
+    <reflection_tweak_emissive>1.000 0.000</reflection_tweak_emissive>
+    <reflection_hdr_mult>0.000 0.000</reflection_hdr_mult>
+    <temperature>20.000 0.000</temperature>
+    <natural_ambient_multiplier>0.000 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>1.000 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="h4_sub_main" numMods="38" userFlags="2">
+    <light_dir_mult>0.000 0.000</light_dir_mult>
+    <light_directional_amb_intensity>0.000 0.000</light_directional_amb_intensity>
+    <light_natural_amb_down_intensity>0.000 0.000</light_natural_amb_down_intensity>
+    <light_natural_amb_up_intensity>0.000 5.000</light_natural_amb_up_intensity>
+    <light_natural_push>0.000 0.000</light_natural_push>
+    <light_artificial_int_down_col_r>0.557 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.835 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>1.000 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.005 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.557 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.835 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>1.000 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.010 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>0.557 1.000</ped_light_col_r>
+    <ped_light_col_g>0.835 1.000</ped_light_col_g>
+    <ped_light_col_b>1.000 1.000</ped_light_col_b>
+    <ped_light_mult>0.250 1.000</ped_light_mult>
+    <ped_light_direction_x>-0.250 0.000</ped_light_direction_x>
+    <ped_light_direction_y>1.000 0.000</ped_light_direction_y>
+    <ped_light_direction_z>0.800 0.000</ped_light_direction_z>
+    <light_amb_occ_mult_ped>0.800 0.000</light_amb_occ_mult_ped>
+    <light_amb_volumes_in_diffuse>1.000 0.000</light_amb_volumes_in_diffuse>
+    <ssao_inten>3.000 0.000</ssao_inten>
+    <postfx_exposure>0.750 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh_width>0.000 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.000 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <bokeh_fade_max>0.500 0.000</bokeh_fade_max>
+    <sprite_brightness>1.000 0.000</sprite_brightness>
+    <sprite_size>1.000 0.000</sprite_size>
+    <fog_start>120.000 120.000</fog_start>
+    <reflection_interior_range>30.000 0.000</reflection_interior_range>
+    <reflection_tweak_interior_amb>8.000 0.000</reflection_tweak_interior_amb>
+    <reflection_tweak_emissive>1.000 0.000</reflection_tweak_emissive>
+    <reflection_hdr_mult>0.000 0.000</reflection_hdr_mult>
+    <temperature>20.000 0.000</temperature>
+    <natural_ambient_multiplier>0.000 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>1.000 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="h4_sub_commandroom" numMods="35" userFlags="2">
+    <light_dir_mult>0.000 0.000</light_dir_mult>
+    <light_directional_amb_intensity>0.000 0.000</light_directional_amb_intensity>
+    <light_natural_amb_up_intensity>0.000 5.000</light_natural_amb_up_intensity>
+    <light_natural_push>0.000 0.000</light_natural_push>
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.788 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.286 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_up_col_r>0.427 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.804 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.914 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.050 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>1.000 1.000</ped_light_col_g>
+    <ped_light_col_b>1.000 1.000</ped_light_col_b>
+    <ped_light_mult>0.400 1.000</ped_light_mult>
+    <ped_light_direction_x>-0.250 0.000</ped_light_direction_x>
+    <ped_light_direction_y>1.000 0.000</ped_light_direction_y>
+    <ped_light_direction_z>0.800 0.000</ped_light_direction_z>
+    <light_amb_occ_mult_ped>0.800 0.000</light_amb_occ_mult_ped>
+    <light_amb_volumes_in_diffuse>1.000 0.000</light_amb_volumes_in_diffuse>
+    <ssao_inten>3.000 0.000</ssao_inten>
+    <postfx_bright_pass_thresh_width>0.000 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.000 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <bokeh_fade_max>0.500 0.000</bokeh_fade_max>
+    <sprite_brightness>1.000 0.000</sprite_brightness>
+    <sprite_size>1.000 0.000</sprite_size>
+    <fog_start>120.000 120.000</fog_start>
+    <reflection_interior_range>30.000 0.000</reflection_interior_range>
+    <reflection_tweak_interior_amb>8.000 0.000</reflection_tweak_interior_amb>
+    <reflection_tweak_emissive>1.000 0.000</reflection_tweak_emissive>
+    <reflection_hdr_mult>0.000 0.000</reflection_hdr_mult>
+    <temperature>20.000 0.000</temperature>
+    <natural_ambient_multiplier>0.000 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>1.000 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="h4_sub_commandroom_BloomRedux" numMods="36" userFlags="2">
+    <light_dir_mult>0.000 0.000</light_dir_mult>
+    <light_directional_amb_intensity>0.000 0.000</light_directional_amb_intensity>
+    <light_natural_amb_up_intensity>0.000 5.000</light_natural_amb_up_intensity>
+    <light_natural_push>0.000 0.000</light_natural_push>
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.788 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.286 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_up_col_r>0.427 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.804 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.914 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.050 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>1.000 1.000</ped_light_col_g>
+    <ped_light_col_b>1.000 1.000</ped_light_col_b>
+    <ped_light_mult>0.400 1.000</ped_light_mult>
+    <ped_light_direction_x>-0.250 0.000</ped_light_direction_x>
+    <ped_light_direction_y>1.000 0.000</ped_light_direction_y>
+    <ped_light_direction_z>0.800 0.000</ped_light_direction_z>
+    <light_amb_occ_mult_ped>0.800 0.000</light_amb_occ_mult_ped>
+    <light_amb_volumes_in_diffuse>1.000 0.000</light_amb_volumes_in_diffuse>
+    <ssao_inten>3.000 0.000</ssao_inten>
+    <postfx_bright_pass_thresh_width>0.000 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.000 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.075 0.000</postfx_intensity_bloom>
+    <bokeh_fade_max>0.500 0.000</bokeh_fade_max>
+    <lens_artefacts_intensity>0.000 0.000</lens_artefacts_intensity>
+    <sprite_brightness>1.000 0.000</sprite_brightness>
+    <sprite_size>1.000 0.000</sprite_size>
+    <fog_start>120.000 120.000</fog_start>
+    <reflection_interior_range>30.000 0.000</reflection_interior_range>
+    <reflection_tweak_interior_amb>8.000 0.000</reflection_tweak_interior_amb>
+    <reflection_tweak_emissive>1.000 0.000</reflection_tweak_emissive>
+    <reflection_hdr_mult>0.000 0.000</reflection_hdr_mult>
+    <temperature>20.000 0.000</temperature>
+    <natural_ambient_multiplier>0.000 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>1.000 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="DLC_Island_Storerooms" numMods="20" userFlags="2">
+    <light_amb_down_wrap>0.248 0.000</light_amb_down_wrap>
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.596 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.176 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.100 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.596 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.176 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.200 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.706 1.000</ped_light_col_g>
+    <ped_light_col_b>0.341 1.000</ped_light_col_b>
+    <ped_light_mult>1.000 1.000</ped_light_mult>
+    <ped_light_direction_z>1.000 0.000</ped_light_direction_z>
+    <ssao_inten>4.000 0.000</ssao_inten>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh>2.460 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.100 0.000</postfx_intensity_bloom>
+    <natural_ambient_multiplier>0.200 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.475 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="DLC_Island_vault_01" numMods="17" userFlags="2">
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.510 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.259 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.010 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.510 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.259 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>1.000 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.510 1.000</ped_light_col_g>
+    <ped_light_col_b>0.259 1.000</ped_light_col_b>
+    <ped_light_mult>0.200 1.000</ped_light_mult>
+    <ped_light_direction_z>1.000 0.000</ped_light_direction_z>
+    <ssao_inten>4.000 0.000</ssao_inten>
+    <postfx_exposure>-1.500 0.000</postfx_exposure>
+    <natural_ambient_multiplier>0.025 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.125 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="Mpheist4_Mansion_exterior" numMods="8" userFlags="0">
+    <light_artificial_ext_down_col_r>1.000 1.000</light_artificial_ext_down_col_r>
+    <light_artificial_ext_down_col_g>0.851 1.000</light_artificial_ext_down_col_g>
+    <light_artificial_ext_down_col_b>0.490 1.000</light_artificial_ext_down_col_b>
+    <light_artificial_ext_down_intensity>0.200 0.000</light_artificial_ext_down_intensity>
+    <light_artificial_ext_up_col_r>1.000 1.000</light_artificial_ext_up_col_r>
+    <light_artificial_ext_up_col_g>0.690 1.000</light_artificial_ext_up_col_g>
+    <light_artificial_ext_up_col_b>0.333 1.000</light_artificial_ext_up_col_b>
+    <light_artificial_ext_up_intensity>0.400 0.000</light_artificial_ext_up_intensity>
+  </modifier>
+  <modifier name="MP_Heist4_Island_Mansion_Ext" numMods="8" userFlags="0">
+    <light_artificial_ext_down_col_r>1.000 1.000</light_artificial_ext_down_col_r>
+    <light_artificial_ext_down_col_g>0.851 1.000</light_artificial_ext_down_col_g>
+    <light_artificial_ext_down_col_b>0.498 1.000</light_artificial_ext_down_col_b>
+    <light_artificial_ext_down_intensity>0.200 0.000</light_artificial_ext_down_intensity>
+    <light_artificial_ext_up_col_r>1.000 1.000</light_artificial_ext_up_col_r>
+    <light_artificial_ext_up_col_g>0.698 1.000</light_artificial_ext_up_col_g>
+    <light_artificial_ext_up_col_b>0.337 1.000</light_artificial_ext_up_col_b>
+    <light_artificial_ext_up_intensity>0.300 0.000</light_artificial_ext_up_intensity>
+  </modifier>
+  <modifier name="MP_Heist4_Docks_Ext" numMods="8" userFlags="0">
+    <light_artificial_ext_down_col_r>1.000 1.000</light_artificial_ext_down_col_r>
+    <light_artificial_ext_down_col_g>0.980 1.000</light_artificial_ext_down_col_g>
+    <light_artificial_ext_down_col_b>0.929 1.000</light_artificial_ext_down_col_b>
+    <light_artificial_ext_down_intensity>0.100 0.000</light_artificial_ext_down_intensity>
+    <light_artificial_ext_up_col_r>1.000 1.000</light_artificial_ext_up_col_r>
+    <light_artificial_ext_up_col_g>0.973 1.000</light_artificial_ext_up_col_g>
+    <light_artificial_ext_up_col_b>0.914 1.000</light_artificial_ext_up_col_b>
+    <light_artificial_ext_up_intensity>0.100 0.000</light_artificial_ext_up_intensity>
+  </modifier>
+  <modifier name="MP_Heist4_Artificial_Amb_Mul" numMods="1" userFlags="0">
+    <artificial_int_ambient_multiplier>0.800 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="DLC_Island_Storerooms2" numMods="19" userFlags="2">
+    <light_amb_down_wrap>0.248 0.000</light_amb_down_wrap>
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.596 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.176 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.596 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.176 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>1.000 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.706 1.000</ped_light_col_g>
+    <ped_light_col_b>0.341 1.000</ped_light_col_b>
+    <ped_light_mult>1.000 1.000</ped_light_mult>
+    <ssao_inten>4.000 0.000</ssao_inten>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh>2.460 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.100 0.000</postfx_intensity_bloom>
+    <natural_ambient_multiplier>0.200 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.475 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="DLC_Island_main_hanger" numMods="24" userFlags="2">
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.898 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.773 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.200 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.714 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.898 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>1.000 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.500 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.922 1.000</ped_light_col_g>
+    <ped_light_col_b>0.663 1.000</ped_light_col_b>
+    <ped_light_mult>0.600 1.000</ped_light_mult>
+    <ped_light_direction_x>-0.190 0.000</ped_light_direction_x>
+    <ped_light_direction_y>0.702 0.000</ped_light_direction_y>
+    <ped_light_direction_z>0.832 0.000</ped_light_direction_z>
+    <ssao_inten>4.575 0.000</ssao_inten>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh_width>0.500 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.500 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.050 0.000</postfx_intensity_bloom>
+    <fog_start>1500.000 1500.000</fog_start>
+    <reflection_interior_range>10.000 0.000</reflection_interior_range>
+    <natural_ambient_multiplier>0.750 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.500 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="DLC_Island_main_hanger_office" numMods="24" userFlags="2">
+    <light_artificial_int_down_col_r>0.690 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.376 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.376 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>2.000 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.694 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.376 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.376 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>2.500 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>0.773 1.000</ped_light_col_r>
+    <ped_light_col_g>0.051 1.000</ped_light_col_g>
+    <ped_light_col_b>0.051 1.000</ped_light_col_b>
+    <ped_light_mult>0.200 1.000</ped_light_mult>
+    <ped_light_direction_x>-0.190 0.000</ped_light_direction_x>
+    <ped_light_direction_y>0.702 0.000</ped_light_direction_y>
+    <ped_light_direction_z>0.832 0.000</ped_light_direction_z>
+    <ssao_inten>4.575 0.000</ssao_inten>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh_width>0.500 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.500 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.050 0.000</postfx_intensity_bloom>
+    <fog_start>1500.000 1500.000</fog_start>
+    <reflection_interior_range>10.000 0.000</reflection_interior_range>
+    <natural_ambient_multiplier>0.200 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.125 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="DLC_Island_main_hanger_door" numMods="24" userFlags="0">
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.898 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.773 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.200 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.714 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.898 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>1.000 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.500 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.922 1.000</ped_light_col_g>
+    <ped_light_col_b>0.663 1.000</ped_light_col_b>
+    <ped_light_mult>0.600 1.000</ped_light_mult>
+    <ped_light_direction_x>-0.190 0.000</ped_light_direction_x>
+    <ped_light_direction_y>0.702 0.000</ped_light_direction_y>
+    <ped_light_direction_z>0.832 0.000</ped_light_direction_z>
+    <ssao_inten>4.575 0.000</ssao_inten>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh_width>0.500 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.500 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.050 0.000</postfx_intensity_bloom>
+    <fog_start>1500.000 1500.000</fog_start>
+    <reflection_interior_range>10.000 0.000</reflection_interior_range>
+    <natural_ambient_multiplier>0.750 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.500 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="mp_heist4_office_door" numMods="21" userFlags="0">
+    <light_amb_down_wrap>1.000 0.000</light_amb_down_wrap>
+    <light_natural_push>0.050 0.000</light_natural_push>
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.216 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.247 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>1.200 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.302 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.090 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>2.500 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.090 1.000</ped_light_col_g>
+    <ped_light_col_b>0.035 1.000</ped_light_col_b>
+    <ped_light_mult>0.150 1.000</ped_light_mult>
+    <ped_light_direction_z>1.000 0.000</ped_light_direction_z>
+    <ssao_inten>4.000 0.000</ssao_inten>
+    <postfx_exposure>-1.000 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh>2.460 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.100 0.000</postfx_intensity_bloom>
+    <natural_ambient_multiplier>0.027 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.187 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="MP_Heist4_Storeroom_Door" numMods="19" userFlags="0">
+    <light_amb_down_wrap>0.248 0.000</light_amb_down_wrap>
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.596 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.176 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.596 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.176 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>1.000 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.706 1.000</ped_light_col_g>
+    <ped_light_col_b>0.341 1.000</ped_light_col_b>
+    <ped_light_mult>1.000 1.000</ped_light_mult>
+    <ssao_inten>4.000 0.000</ssao_inten>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh>2.460 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.100 0.000</postfx_intensity_bloom>
+    <natural_ambient_multiplier>0.200 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.475 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="DLC_Island_vault_01_Door" numMods="17" userFlags="0">
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.510 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.259 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.010 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.510 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.259 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>1.000 0.000</light_artificial_int_up_intensity>
+    <ped_light_col_r>1.000 1.000</ped_light_col_r>
+    <ped_light_col_g>0.510 1.000</ped_light_col_g>
+    <ped_light_col_b>0.259 1.000</ped_light_col_b>
+    <ped_light_mult>0.200 1.000</ped_light_mult>
+    <ped_light_direction_z>1.000 0.000</ped_light_direction_z>
+    <ssao_inten>4.000 0.000</ssao_inten>
+    <postfx_exposure>-1.500 0.000</postfx_exposure>
+    <natural_ambient_multiplier>0.025 0.000</natural_ambient_multiplier>
+    <artificial_int_ambient_multiplier>0.125 0.000</artificial_int_ambient_multiplier>
+	<no_rain_ripples>1.000 0.000</no_rain_ripples>
+  </modifier>
+   <modifier name="H4_Hanger_for_CU" numMods="18" userFlags="0">
+    <light_directional_amb_intensity>0.000 0.000</light_directional_amb_intensity>
+    <light_directional_amb_bounce_enabled>0.000 0.000</light_directional_amb_bounce_enabled>
+    <light_natural_amb_down_col_r>0.000 0.800</light_natural_amb_down_col_r>
+    <light_natural_amb_down_col_g>0.004 0.800</light_natural_amb_down_col_g>
+    <light_natural_amb_down_col_b>0.012 0.800</light_natural_amb_down_col_b>
+    <light_natural_amb_up_col_r>0.000 0.800</light_natural_amb_up_col_r>
+    <light_natural_amb_up_col_g>0.000 0.800</light_natural_amb_up_col_g>
+    <light_natural_amb_up_col_b>0.000 0.800</light_natural_amb_up_col_b>
+    <light_natural_amb_up_intensity>0.250 0.000</light_natural_amb_up_intensity>
+    <light_natural_push>0.750 0.000</light_natural_push>
+    <ssao_inten>5.000 0.000</ssao_inten>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh_width>0.000 0.000</postfx_bright_pass_thresh_width>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+    <postfx_tonemap_filmic_override_dark>0.000 0.000</postfx_tonemap_filmic_override_dark>
+    <reflection_hdr_mult>0.400 0.000</reflection_hdr_mult>
+    <natural_ambient_multiplier>1.000 0.000</natural_ambient_multiplier>
+    <no_weather_fx>1.000 0.000</no_weather_fx>
   </modifier>
 </timecycle_modifier_data>
