@@ -15,7 +15,7 @@ VisualV is a graphic overhaul modification for Grand Theft Auto V, bringing you 
 - And many, many minor fixes.
 
 
-VisualV has own ReShade and ENB presets, with heat haze effect available only for VisualV.
+VisualV has its own ReShade and ENB presets, with heat haze effect available for VisualV only.
 
 VisualV has introduced several optional changes to improve your game experience, here is the list of them:
 
@@ -36,9 +36,10 @@ VisualV has introduced several optional changes to improve your game experience,
 # Installation
 For OpenIV modPackage:
 1. Install OpenIV - http://openiv.com/WebIV/guest.php?get=1
-2. Run OpenIV, click Tools -> ASI Manager and install ASI Loader and OpenIV.asi.
-3. Click Tools -> Package Installer and choose VisualV.oiv.
-4. Choose Install to mods folder.
+2. Install ScriptHook to use our scripts: http://www.dev-c.com/gtav/scripthookv/
+3. Run OpenIV, click Tools -> ASI Manager and install ASI Loader and OpenIV.asi.
+4. Click Tools -> Package Installer and choose VisualV.oiv.
+5. Choose Install to mods folder.
 
 
 If you have ANY problem with GTA V modding, go here:
@@ -54,14 +55,14 @@ https://www.mediafire.com/folder/vrv4z3navwafa/VisualV
 http://gtaforums.com/topic/792891-vwipvisualv
 
 # ENB Series installation
-Firstly, download ENB Series here and install it to GTAV directory: http://enbdev.com/mod_gta5_v0387.htm
+Firstly, download ENB Series here and install it to GTAV directory: http://enbdev.com/mod_gta5_v0456.htm
 
 Copy all files in "ENB settings" to root folder of Grand Theft Auto V (e.g. C:\Games\Rockstar Games\Grand Theft Auto V).
 
 # ReShade installation
 If you want to use our ReShade preset, go through these steps:
 1. Copy our preset from "optionals/ReShade preset" to main folder of GTAV.
-2. Change name of ReShade64.dll to dxgi.dll.
+2. Change name of ReShade64.dll to dxgi.dll, if you want to use it without ENB.
 
 How to control effects:
 - Press F9 to enable/disable ambient light.
@@ -69,7 +70,7 @@ How to control effects:
 - Press F11 to enable/disable heat haze effect.
 
 # ENB Series + ReShade
-If you want to have ENB Series and ReShade preset at the same time, you have to change "EnableProxyLibrary" to true, "InitProxyFunctions" to false and "ProxyLibrary" value to d3d11.dll.
+If you want to have ENB Series and ReShade preset at the same time, you have to set "EnableProxyLibrary" to true, "InitProxyFunctions" to false and "ProxyLibrary" value to d3d11.dll.
 
 For example:
 ```
@@ -78,3 +79,6 @@ EnableProxyLibrary=true
 InitProxyFunctions=false
 ProxyLibrary=d3d11.dll
 ```
+
+# ASI scripts
+Source codes for ASI scripts used in VisualV are available here: https://github.com/robi29/GTAVScripts
