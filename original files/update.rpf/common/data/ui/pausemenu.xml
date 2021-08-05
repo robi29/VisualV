@@ -667,6 +667,7 @@
 				<Item> <cTextId>LANG_CH</cTextId> </Item>
 				<Item> <cTextId>LANG_J</cTextId> </Item>
 				<Item> <cTextId>LANG_MEX</cTextId> </Item>
+        <Item> <cTextId>LANG_CHS</cTextId> </Item>
 			</MenuDisplayOptions>
 		</Item>
 		
@@ -1007,7 +1008,6 @@
 				<!--<Item> <cTextId>PM_SCR_PLA</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_PLAYERS</MenuUniqueId> </Item>-->
 				<Item> <cTextId>PM_SCR_FRI</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_FRIENDS_MP</MenuUniqueId> </Item>
 				<Item> <cTextId>PM_SCR_INF</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_INFO</MenuUniqueId> </Item>
-
 				<Item> <cTextId>PM_SCR_SET</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_SETTINGS</MenuUniqueId> </Item>
 				<Item> <cTextId>CMRC_GOTOSTORE</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_STORE</MenuUniqueId> </Item>
 				<Item> <cTextId>PM_SCR_STA</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_STATS</MenuUniqueId> </Item>
@@ -1017,7 +1017,6 @@
 				<Item> <cTextId>PM_SCR_AWA</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_MEDALS</MenuUniqueId> </Item>
 				-->
 				<Item> <cTextId>PM_SCR_GAL</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_GALLERY</MenuUniqueId> </Item>
-
 				<!--<Item> <cTextId>PM_SCR_RPL</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_REPLAY_EDITOR</MenuUniqueId> <Contexts>*ALL*, ReplayEditor</Contexts> </Item>-->
 			</MenuItems>
 		</Item>
@@ -1838,6 +1837,7 @@
 					
 					<!--<CMenuButton> <hButtonHash>FE_HLP5</hButtonHash>		<RawButtonIcon>ARROW_UPDOWN</RawButtonIcon> 	  <Contexts>*ANY*,SINGLE_SCREEN,NAVIGATING_CONTENT</Contexts></CMenuButton>-->
 					<CMenuButton> <hButtonHash>IB_SELECT</hButtonHash>		<ButtonInput>INPUT_FRONTEND_ACCEPT</ButtonInput> <Contexts>*NONE*,EditPlaylistDrop,EditPlaylistPick,SupressSelectPM</Contexts> </CMenuButton>
+					<CMenuButton> <hButtonHash>PM_PURCHCAP</hButtonHash>		<ButtonInput>INPUT_FRONTEND_ACCEPT</ButtonInput> <Contexts>*ALL*,PurchaseAvailable</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>IB_BACK</hButtonHash> 		<ButtonInput>INPUT_FRONTEND_CANCEL</ButtonInput> </CMenuButton>
 					
 					<CMenuButton> <hButtonHash>PM_PL_CHALANGE</hButtonHash> <ButtonInput>INPUT_FRONTEND_SELECT</ButtonInput> <Contexts>*ALL*,SetCrewChallenge</Contexts> </CMenuButton>
@@ -1872,7 +1872,9 @@
 					<CMenuButton> <hButtonHash>PM_RC_AIR</hButtonHash> <ButtonInput>INPUT_FRONTEND_LS</ButtonInput> <Contexts>*ALL*,CycleToAirRaces</Contexts> </CMenuButton>	
 					<CMenuButton> <hButtonHash>PM_RC_BOAT</hButtonHash> <ButtonInput>INPUT_FRONTEND_LS</ButtonInput> <Contexts>*ALL*,CycleToWaterRaces</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>PM_RC_STUNT</hButtonHash> <ButtonInput>INPUT_FRONTEND_LS</ButtonInput> <Contexts>*ALL*,CycleToStuntRaces</Contexts> </CMenuButton>
+					<CMenuButton> <hButtonHash>PM_RC_ASSUALT</hButtonHash> <ButtonInput>INPUT_FRONTEND_LS</ButtonInput> <Contexts>*ALL*,CycleToTargetAssaultRaces</Contexts> </CMenuButton>
 
+					
 					<CMenuButton> <hButtonHash>PM_CAP_ALL</hButtonHash> <ButtonInput>INPUT_FRONTEND_LS</ButtonInput> <Contexts>*ALL*,CycleToAllCaptures</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>PM_CAP_GTA</hButtonHash> <ButtonInput>INPUT_FRONTEND_LS</ButtonInput> <Contexts>*ALL*,CycleToGTACaptures</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>PM_CAP_HOLD</hButtonHash> <ButtonInput>INPUT_FRONTEND_LS</ButtonInput> <Contexts>*ALL*,CycleToHoldCaptures</Contexts> </CMenuButton>
@@ -1967,6 +1969,7 @@
 				<Item> <cTextId>PM_REPEATRC</cTextId>	<MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_REPLAY_RANDOM</MenuUniqueId> <!--<Contexts>HAS_DONE_MISSIONS</Contexts>--></Item>
 				<Item> <cTextId>PM_PANE_LOA</cTextId>	<MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_LOAD_GAME</MenuUniqueId> </Item>
 				<Item> <cTextId>PM_PANE_NEW</cTextId>	<MenuAction>MENU_OPTION_ACTION_TRIGGER</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_NEW_GAME</MenuUniqueId> </Item>
+				<Item> <cTextId>PM_PANE_PROC</cTextId>	<MenuAction>MENU_OPTION_ACTION_TRIGGER</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_PROCESS_SAVEGAME</MenuUniqueId> <Contexts>*ALL*, ALLOW_PROCESS_SAVEGAME</Contexts> </Item>
 				<Item> <cTextId>PM_PANE_PICK</cTextId> <MenuAction>MENU_OPTION_ACTION_TRIGGER</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_SHOW_ACCOUNT_PICKER</MenuUniqueId> <Contexts>*ALL*, DURANGO</Contexts></Item>
 				<Item> <cTextId>PM_PANE_QUIT</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_EXIT_TO_WINDOWS</MenuUniqueId> <Contexts>*ALL*, x64</Contexts></Item>
 				<Item> <MenuAction>MENU_OPTION_ACTION_FILL_CONTENT</MenuAction> </Item>
@@ -2938,6 +2941,9 @@
 					<CMenuButton> <hButtonHash>ITEM_AMMO</hButtonHash>			<ButtonInput>INPUT_FRONTEND_RIGHT</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, TOGGLE_AMMO</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>HUD_INPUT100</hButtonHash>		<ButtonInput>INPUT_FRONTEND_RT</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_PLAYERS_R2, *NONE*, CORONA_PLAYERS_L2</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>HUD_INPUT100</hButtonHash>		<ButtonInput>INPUT_FRONTEND_LT</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_PLAYERS_L2, *NONE*, CORONA_PLAYERS_R2</Contexts> </CMenuButton>
+					
+					<CMenuButton> <hButtonHash>AW_VIEWSTAT</hButtonHash>		<ButtonInput>INPUT_FRONTEND_X</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_VIEW_VSTAT, *NONE*</Contexts> </CMenuButton>
+					<CMenuButton> <hButtonHash>AW_VIEWMODS</hButtonHash>		<ButtonInput>INPUT_FRONTEND_X</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_VIEW_VMODS, *NONE*</Contexts> </CMenuButton>
 				</ButtonPrompts>
 			</ButtonList>
 		</Item>
@@ -3090,7 +3096,7 @@
 				<ButtonPrompts>
 					<!--<CMenuButton> <hButtonHash>HUD_INPUT1C</hButtonHash>					<ButtonInputGroup>INPUTGROUP_FRONTEND_DPAD_LR</ButtonInputGroup> <Contexts>*NONE*,NAVIGATING_CONTENT</Contexts></CMenuButton>-->
 					<!--<CMenuButton IsNavigate="true"> <hButtonHash>FE_HLP5</hButtonHash>		<RawButtonIcon>ARROW_UPDOWN</RawButtonIcon> 	  <Contexts>*ANY*,SINGLE_SCREEN,NAVIGATING_CONTENT</Contexts></CMenuButton>-->
-					<CMenuButton> <hButtonHash>IB_INVITE</hButtonHash>			<ButtonInput>INPUT_FRONTEND_ACCEPT</ButtonInput> <Contexts>*NONE*,IsLocalPlayer,IsInTransition,IsInvitedToTransition,TutLock,*ALL*,HasPlayers,PlayerIsOnline</Contexts> </CMenuButton>
+					<CMenuButton> <hButtonHash>IB_INVITE</hButtonHash>			<ButtonInput>INPUT_FRONTEND_ACCEPT</ButtonInput> <Contexts>*NONE*,IsLocalPlayer,IsInTransition,IsInvitedToTransition,TutLock,*ALL*,HasPlayers,PlayerIsOnline,PlayerIsInvitable</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>IB_CANCLE_INVITE</hButtonHash>	<ButtonInput>INPUT_FRONTEND_X</ButtonInput> <Contexts>*NONE*,IsLocalPlayer,IsInTransition,*ALL*,IsInvitedToTransition,HasPlayers</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>IB_KICK</hButtonHash>			<ButtonInput>INPUT_FRONTEND_X</ButtonInput> <Contexts>*NONE*,IsLocalPlayer,IsKickForceHidden,*ALL*,IsInTransition,HasPlayers</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>IB_BACK</hButtonHash> 		<ButtonInput>INPUT_FRONTEND_CANCEL</ButtonInput> </CMenuButton>
@@ -3392,6 +3398,8 @@
 					<CMenuButton> <hButtonHash>HUD_HD_PLAN</hButtonHash>		<ButtonInput>INPUT_FRONTEND_RB</ButtonInput>		<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_HIDE_PLANNING, *NONE*</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>IMP_VIEWTEAM</hButtonHash>		<ButtonInput>INPUT_FRONTEND_X</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_VIEW_TEAMMATES, *NONE*</Contexts> </CMenuButton>
 					<CMenuButton> <hButtonHash>IMP_VIEWME</hButtonHash>			<ButtonInput>INPUT_FRONTEND_X</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_VIEW_MYTEAM, *NONE*</Contexts> </CMenuButton>
+					<CMenuButton> <hButtonHash>AW_VIEWSTAT</hButtonHash>		<ButtonInput>INPUT_FRONTEND_X</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_VIEW_VSTAT, *NONE*</Contexts> </CMenuButton>
+					<CMenuButton> <hButtonHash>AW_VIEWMODS</hButtonHash>		<ButtonInput>INPUT_FRONTEND_X</ButtonInput>			<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, CORONA_VIEW_VMODS, *NONE*</Contexts> </CMenuButton>
 				</ButtonPrompts>
 			</ButtonList>
 		</Item>
@@ -3477,11 +3485,21 @@
 				<Item> <cTextId>PM_PANE_KEYS_UC</cTextId> <MenuAction>MENU_OPTION_ACTION_LINK</MenuAction> <MenuUniqueId>MENU_UNIQUE_ID_KEYMAP</MenuUniqueId> </Item>
 			</MenuItems>
 		</Item>
+		
+		<Item>
+			<MenuScreen>MENU_UNIQUE_ID_PROCESS_SAVEGAME</MenuScreen>
+			<depth>2</depth>
+			<MenuItems>
+				<Item> <MenuAction>MENU_OPTION_ACTION_FILL_CONTENT</MenuAction> </Item>
+			</MenuItems>
+			<Flags>SF_NoClearRootColumns</Flags>
+		</Item>
 
 		<!-- These are here to replace the metadata lost in the Great Scaleform Emigration -->
 		<!-- these need to have everything as TRUE-->
 		<Item>	<MenuScreen>MENU_UNIQUE_ID_CREWS_CARD</MenuScreen>				<Flags>NeverGenerateMenuData </Flags>		</Item>
 		<Item>	<MenuScreen>MENU_UNIQUE_ID_SAVE_GAME_LIST</MenuScreen>			<Flags>NeverGenerateMenuData </Flags>		</Item>
+		<Item>	<MenuScreen>MENU_UNIQUE_ID_PROCESS_SAVEGAME_LIST</MenuScreen>	<Flags>NeverGenerateMenuData </Flags>		</Item>
 		<Item>	<MenuScreen>MENU_UNIQUE_ID_HOME</MenuScreen>					<Flags>NeverGenerateMenuData </Flags>		</Item>
 		<Item>	<MenuScreen>MENU_UNIQUE_ID_HEADER_MY_MP</MenuScreen>			<Flags>NeverGenerateMenuData </Flags>		</Item>
 		<Item>	<MenuScreen>MENU_UNIQUE_ID_FREEMODE</MenuScreen>				<Flags>NeverGenerateMenuData </Flags>		</Item>
@@ -3616,13 +3634,13 @@
 		<Item>
 			<contextOption>SEND_GAME_INVITE</contextOption>
 			<text>CM_SEND_GAME_INVITE</text>
-			<displayCondition>*ALL*, InMP, PlayerIsOnline, *NONE*, Lobby, InLocalSession, IsLocalPlayer, JIPLocked</displayCondition>
+			<displayCondition>*ALL*, InMP, PlayerIsOnline, PlayerIsInvitable, *NONE*, Lobby, InLocalSession, IsLocalPlayer, JIPLocked</displayCondition>
 		</Item>
 
 		<Item>
 			<contextOption>SEND_GAME_INVITE_DIS</contextOption>
 			<text>CM_SEND_GAME_INVITE_DIS</text>
-			<displayCondition>*ALL*, InMP, PlayerIsOnline, JIPLocked, *NONE*, Lobby, InLocalSession, IsLocalPlayer</displayCondition>
+			<displayCondition>*ALL*, InMP, PlayerIsOnline, PlayerIsInvitable, JIPLocked, *NONE*, Lobby, InLocalSession, IsLocalPlayer</displayCondition>
 		</Item>
 	
 		<Item>
@@ -3659,7 +3677,7 @@
 			<contextOption>REPORT_DISABLED</contextOption>
 			<text>CM_REPORT_DIS</text>
 			<displayCondition>*ALL*, InMP, *ANY*, DisableReport, InReportCooldown, *NONE*, IsLocalPlayer, LocalIsBadSport</displayCondition>
-    </Item>			
+    </Item>		
 	
 		<Item>
 			<contextOption>COMMEND</contextOption>
