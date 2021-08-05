@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MainWaterTune>
+  <WaterColor value="0x1A00191C" />
+  <RippleScale value="0.040000" />
+  <OceanFoamScale value="0.050000" />
+  <SpecularFalloff value="1118.000000" />
+  <FogPierceIntensity value="1.100000" />
+  <RefractionBlend value="0.700000" />
+  <RefractionExponent value="0.250000" />
+  <WaterCycleDepth value="10.000000" />
+  <WaterCycleFade value="50.000000" />
+  <WaterLightningDepth value="0.000000" />
+  <WaterLightningFade value="10.000000" />
+  <DeepWaterModDepth value="90.000000" />
+  <DeepWaterModFade value="80.000000" />
+  <GodRaysLerpStart value="0.000000" />
+  <GodRaysLerpEnd value="200.000000" />
+  <DisturbFoamScale value="0.050000" />
+  <FogMin x="2700.000000" y="-7150.000000" />
+  <FogMax x="6700.000000" y="-3150.000000" />
+</MainWaterTune>
