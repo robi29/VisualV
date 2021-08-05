@@ -84,6 +84,21 @@ car.fatinteriorlight.night.emissive.off	0.00
 car.fatinteriorlight.coronaHDR 1.00
 car.fatinteriorlight.coronaSize 0.25
 
+# car.redinteriorlight.color	1.00	0.00	0.00
+car.redinteriorlight.color.red	1.00
+car.redinteriorlight.color.green	0.00
+car.redinteriorlight.color.blue	0.00
+car.redinteriorlight.intensity	1.50
+car.redinteriorlight.radius	2.10
+car.redinteriorlight.innerConeAngle	0.00
+car.redinteriorlight.outerConeAngle	90.00
+car.redinteriorlight.day.emissive.on	0.00
+car.redinteriorlight.night.emissive.on	0.00
+car.redinteriorlight.day.emissive.off	0.00
+car.redinteriorlight.night.emissive.off	0.00
+car.redinteriorlight.coronaHDR 1.00
+car.redinteriorlight.coronaSize 0.25
+
 car.platelight.color.red	1.00
 car.platelight.color.green	1.00
 car.platelight.color.blue	1.00

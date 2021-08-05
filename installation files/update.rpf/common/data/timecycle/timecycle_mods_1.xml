@@ -258,40 +258,6 @@
 		<temperature>10.000 0.000</temperature>
 		<particle_light_intensity_mult>2.000 1.000</particle_light_intensity_mult>
 	</modifier>
-	<modifier name="li" numMods="32" userFlags="0">
-		<light_dir_col_r>0.886 0.000</light_dir_col_r>
-		<light_dir_col_g>0.675 0.000</light_dir_col_g>
-		<light_dir_col_b>0.388 0.000</light_dir_col_b>
-		<postfx_bright_pass_thresh>0.076 0.000</postfx_bright_pass_thresh>
-		<postfx_intensity_bloom>2.230 0.000</postfx_intensity_bloom>
-		<postfx_correct_col_r>1.000 0.000</postfx_correct_col_r>
-		<postfx_correct_col_g>0.000 0.000</postfx_correct_col_g>
-		<postfx_correct_col_b>0.000 0.000</postfx_correct_col_b>
-		<postfx_correct_cutoff>0.500 0.000</postfx_correct_cutoff>
-		<postfx_shift_col_r>1.000 1.000</postfx_shift_col_r>
-		<postfx_shift_col_g>0.078 1.000</postfx_shift_col_g>
-		<postfx_shift_col_b>0.000 1.000</postfx_shift_col_b>
-		<postfx_shift_cutoff>16.000 0.000</postfx_shift_cutoff>
-		<postfx_desaturation>0.000 0.000</postfx_desaturation>
-		<postfx_noise>0.050 0.000</postfx_noise>
-		<postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
-		<postfx_vignetting_radius>12.500 0.000</postfx_vignetting_radius>
-		<postfx_vignetting_contrast>1.000 0.000</postfx_vignetting_contrast>
-		<postfx_vignetting_col_r>0.486 0.000</postfx_vignetting_col_r>
-		<postfx_vignetting_col_g>0.000 0.000</postfx_vignetting_col_g>
-		<postfx_vignetting_col_b>0.000 0.000</postfx_vignetting_col_b>
-		<postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
-		<postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
-		<postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
-		<postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
-		<postfx_grad_middle_col_g>0.812 0.000</postfx_grad_middle_col_g>
-		<postfx_grad_middle_col_b>0.745 0.000</postfx_grad_middle_col_b>
-		<postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
-		<postfx_grad_bottom_col_g>0.000 0.000</postfx_grad_bottom_col_g>
-		<postfx_grad_bottom_col_b>0.000 0.000</postfx_grad_bottom_col_b>
-		<dof_blur_mid>0.700 0.000</dof_blur_mid>
-		<dof_blur_far>1.000 0.000</dof_blur_far>
-	</modifier>
 	<modifier name="NoAmbientmult" numMods="4" userFlags="0">
 		<lens_artefacts_intensity>0.020 0.000</lens_artefacts_intensity>
 		<temperature>15.000 0.000</temperature>
@@ -1005,7 +971,7 @@
 	<modifier name="reducewaterREF" numMods="1" userFlags="0">
 		<water_reflection_far_clip>0.000 0.000</water_reflection_far_clip>
 	</modifier>
-	<modifier name="garage" numMods="12" userFlags="2">
+	<modifier name="Garage" numMods="12" userFlags="2">
 		<light_amb_down_wrap>0.200 0.000</light_amb_down_wrap>
 		<light_artificial_ext_down_col_r>0.957 1.000</light_artificial_ext_down_col_r>
 		<light_artificial_ext_down_col_g>1.000 1.000</light_artificial_ext_down_col_g>
