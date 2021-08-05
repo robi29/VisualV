@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CloudHatManager>
+  <mCloudHatFrags>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="25.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="1800.000000" y="1800.000000" z="1500.000000" />
+      <mName>Cloudy 01</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="500.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cloudy_base</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.600000" />
+          <mTransitionOutDelayPercent value="0.600000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cloudy_a</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="0.200000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.600000" />
+          <mTransitionOutDelayPercent value="0.600000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cloudy_b</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="0.300000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cloudy_c</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="0.400000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cloudy_d</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cloudy_e</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="0.800000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cloudy_f</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.499000" />
+      <mTransitionMidPoint value="0.500000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.007600" />
+      <mAnimBlendWeights x="1.000000" y="0.075000" z="0.150000" />
+      <mUVVelocity content="vec2v_array">
+        -0.000000	0.000000	
+        0.062500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="0.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="1800.000000" />
+      <mName>RAIN</mName>
+      <mLayers>
+        <Item>
+          <mFilename>cloudhat_RAIN_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.500000" />
+          <mTransitionOutDelayPercent value="0.500000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_RAIN_b</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="400.000000" />
+          <mHeightFadeRange value="200.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="250.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="700.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.000000" />
+      <mAnimBlendWeights x="1.000000" y="1.000000" z="1.000000" />
+      <mUVVelocity content="vec2v_array">
+        0.000550	0.000000	
+        0.001500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="0.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="2000.000000" />
+      <mName>horizonband1</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="500.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_clear01_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="1.000000" />
+          <mTransitionOutTimePercent value="1.000000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="-0.001000" />
+      <mAnimBlendWeights x="1.000000" y="2.075000" z="4.525000" />
+      <mUVVelocity content="vec2v_array">
+        0.000000	0.000000	
+        -0.009000	0.000000	
+        0.005000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="0.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="1500.000000" y="1500.000000" z="1200.000000" />
+      <mName>horizonband2</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="500.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cloudy_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="1.000000" />
+          <mTransitionOutTimePercent value="1.000000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="-0.001000" />
+      <mAnimBlendWeights x="1.000000" y="0.950000" z="2.525000" />
+      <mUVVelocity content="vec2v_array">
+        0.000000	0.000000	
+        0.001000	0.000000	
+        0.020250	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="-89.250000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="2000.000000" />
+      <mName>Puffs</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_PUFF_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_PUFF_b</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.400000" />
+          <mTransitionOutDelayPercent value="0.400000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_PUFF_c</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.600000" />
+          <mTransitionOutDelayPercent value="0.600000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.006000" />
+      <mAnimBlendWeights x="1.000000" y="0.500000" z="0.400000" />
+      <mUVVelocity content="vec2v_array">
+        0.000000	0.000000	
+        0.029250	0.000000	
+        -0.028750	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="0.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="2000.459961" />
+      <mName>Wispy</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_WISPY_a</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_WISPY_b</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.500000" />
+          <mTransitionOutDelayPercent value="0.500000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.517000" />
+      <mTransitionMidPoint value="0.524000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.001000" />
+      <mAnimBlendWeights x="1.000000" y="0.900000" z="0.775000" />
+      <mUVVelocity content="vec2v_array">
+        0.002000	0.000000	
+        0.007500	0.002000	
+        -0.006000	0.009000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="-42.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.022949" z="1600.000000" />
+      <mName>Horizon</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_HORIZON_a</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_HORIZON_b</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_HORIZON_c</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_light_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_light_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="-0.000000" z="0.007000" />
+      <mAnimBlendWeights x="1.000000" y="0.450000" z="0.750000" />
+      <mUVVelocity content="vec2v_array">
+        0.000550	0.000000	
+        0.001500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="0.500000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="1700.515015" />
+      <mName>Stormy 01</mName>
+      <mLayers>
+        <Item>
+          <mFilename>cloudhat_stormy01_a</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="1.000000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_stormy01_b</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="1.000000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_stormy01_c</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.600000" />
+          <mTransitionOutDelayPercent value="0.600000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_stormy01_d</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.700000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_stormy01_e</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.800000" />
+          <mTransitionOutTimePercent value="0.200000" />
+          <mTransitionInDelayPercent value="0.200000" />
+          <mTransitionOutDelayPercent value="0.200000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_stormy01_f</mFilename>
+          <mCostFactor value="0.100000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.900000" />
+          <mTransitionOutTimePercent value="0.100000" />
+          <mTransitionInDelayPercent value="0.100000" />
+          <mTransitionOutDelayPercent value="0.100000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.548000" />
+      <mTransitionMidPoint value="0.550000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.000000" />
+      <mAnimBlendWeights x="1.000000" y="0.450000" z="0.675000" />
+      <mUVVelocity content="vec2v_array">
+        0.001550	0.000000	
+        0.022000	-0.000000	
+        0.032000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="-30.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="2000.000000" />
+      <mName>Clear 01</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_clear01_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_clear01_b</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_clear01_c</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.600000" />
+          <mTransitionOutDelayPercent value="0.600000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_light_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_light_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.681000" />
+      <mTransitionMidPoint value="1.000000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.004000" />
+      <mAnimBlendWeights x="1.000000" y="1.275000" z="1.000000" />
+      <mUVVelocity content="vec2v_array">
+        0.000000	0.000000	
+        0.001500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="95.750000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="1000.689026" y="1000.000000" z="1000.000000" />
+      <mName>Snowy 01</mName>
+      <mLayers>
+        <Item>
+          <mFilename>cloudhat_snowy01</mFilename>
+          <mCostFactor value="1.000000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="1.000000" />
+          <mTransitionOutTimePercent value="1.000000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.000000" />
+      <mAnimBlendWeights x="0.000000" y="1.000000" z="0.750000" />
+      <mUVVelocity content="vec2v_array">
+        0.005000	0.000000	
+        0.005000	0.000000	
+        0.010000	0.000000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="0.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="1800.000000" />
+      <mName>Contrails</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="500.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_contrails_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_contrails_b</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.500000" />
+          <mTransitionOutDelayPercent value="0.500000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_contrails_c</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.400000" />
+          <mTransitionOutDelayPercent value="0.400000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_contrails_d</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.600000" />
+          <mTransitionOutDelayPercent value="0.600000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.000000" />
+      <mAnimBlendWeights x="1.000000" y="2.000000" z="2.000000" />
+      <mUVVelocity content="vec2v_array">
+        -0.000000	0.000000	
+        0.001500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="82.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="1500.000000" />
+      <mName>altostratus</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="400.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altostatus_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altostatus_b</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.300000" />
+          <mTransitionOutTimePercent value="0.300000" />
+          <mTransitionInDelayPercent value="0.700000" />
+          <mTransitionOutDelayPercent value="0.700000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.000000" />
+      <mAnimBlendWeights x="1.000000" y="0.325000" z="0.500000" />
+      <mUVVelocity content="vec2v_array">
+        0.000550	0.000000	
+        0.001500	0.001000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        0 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="-46.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="1800.000000" />
+      <mName>Nimbus</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="400.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_nimbus_a</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_nimbus_b</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_nimbus_c</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.600000" />
+          <mTransitionOutDelayPercent value="0.600000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_light_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.400000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_light_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.000000" />
+      <mAnimBlendWeights x="1.000000" y="1.050000" z="1.350000" />
+      <mUVVelocity content="vec2v_array">
+        0.000000	0.000000	
+        0.001500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="-10.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="1600.000000" />
+      <mName>Cirrus</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="400.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cirrus</mFilename>
+          <mCostFactor value="1.000000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="1.000000" />
+          <mTransitionOutTimePercent value="1.000000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.300000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.002000" />
+      <mAnimBlendWeights x="1.000000" y="1.000000" z="0.600000" />
+      <mUVVelocity content="vec2v_array">
+        0.000550	0.000000	
+        0.001500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="-115.750000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="800.000000" />
+      <mName>cirrocumulus</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="400.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cirrocumulus_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.700000" />
+          <mTransitionOutTimePercent value="0.700000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_cirrocumulus_b</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.700000" />
+          <mTransitionOutTimePercent value="0.700000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_light_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_light_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.001000" />
+      <mAnimBlendWeights x="1.000000" y="18.424999" z="13.850000" />
+      <mUVVelocity content="vec2v_array">
+        0.001550	0.000000	
+        0.001500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="0.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="1200.334961" />
+      <mName>stratoscumulus</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="400.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_stratocumulus</mFilename>
+          <mCostFactor value="1.000000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="1.000000" />
+          <mTransitionOutTimePercent value="1.000000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.001000" />
+      <mAnimBlendWeights x="1.000000" y="0.500000" z="0.950000" />
+      <mUVVelocity content="vec2v_array">
+        0.002000	0.000000	
+        0.001500	0.000000	
+        -0.007000	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="-105.500000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="2000.000000" />
+      <mName>horizonband3</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="500.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_PUFF_a</mFilename>
+          <mCostFactor value="1.000000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="1.000000" />
+          <mTransitionOutTimePercent value="1.000000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.000000" />
+      <mAnimBlendWeights x="1.000000" y="1.000000" z="1.225000" />
+      <mUVVelocity content="vec2v_array">
+        0.000550	0.000000	
+        0.001000	0.003000	
+        0.005000	-0.005000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="10.000000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="1500.000000" y="1500.000000" z="1000.041992" />
+      <mName>Stripey</mName>
+      <mLayers>
+        <Item>
+          <mFilename>cloudhat_stripey_a</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.700000" />
+          <mTransitionOutTimePercent value="0.700000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_stripey_b</mFilename>
+          <mCostFactor value="0.200000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.700000" />
+          <mTransitionOutTimePercent value="0.700000" />
+          <mTransitionInDelayPercent value="0.300000" />
+          <mTransitionOutDelayPercent value="0.300000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_heavy_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.009000" />
+      <mAnimBlendWeights x="1.000000" y="3.375000" z="5.775000" />
+      <mUVVelocity content="vec2v_array">
+        0.000000	0.000000	
+        0.010000	0.007000	
+        0.008000	0.004000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="-89.250000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="2000.000000" y="2000.000000" z="2000.000000" />
+      <mName>horsey</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="700.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_Vlight_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.006000" />
+      <mAnimBlendWeights x="1.000000" y="0.500000" z="0.400000" />
+      <mUVVelocity content="vec2v_array">
+        0.000000	0.000000	
+        0.029250	0.000000	
+        -0.028750	0.006000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+    <Item>
+      <mPosition x="0.000000" y="0.000000" z="45.500000" />
+      <mRotation x="0.000000" y="0.000000" z="0.000000" />
+      <mScale x="1500.000000" y="1500.000000" z="1000.041992" />
+      <mName>shower</mName>
+      <mLayers>
+        <Item>
+          <mFilename>horizonring</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="1100.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_shower_a</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_shower_b</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="0.200000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.500000" />
+          <mTransitionOutDelayPercent value="0.500000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_shower_c</mFilename>
+          <mCostFactor value="0.300000" />
+          <mRotationScale value="1.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.500000" />
+          <mTransitionOutTimePercent value="0.500000" />
+          <mTransitionInDelayPercent value="0.200000" />
+          <mTransitionOutDelayPercent value="0.200000" />
+          <mHeightTigger value="0.000000" />
+          <mHeightFadeRange value="0.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_a</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.100000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="600.000000" />
+          <mHeightFadeRange value="300.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_b</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.500000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="800.000000" />
+          <mHeightFadeRange value="400.000000" />
+        </Item>
+        <Item>
+          <mFilename>cloudhat_altitude_med_c</mFilename>
+          <mCostFactor value="0.000000" />
+          <mRotationScale value="0.000000" />
+          <mCamPositionScalerAdjust value="1.000000" />
+          <mTransitionInTimePercent value="0.400000" />
+          <mTransitionOutTimePercent value="0.400000" />
+          <mTransitionInDelayPercent value="0.000000" />
+          <mTransitionOutDelayPercent value="0.000000" />
+          <mHeightTigger value="900.000000" />
+          <mHeightFadeRange value="500.000000" />
+        </Item>
+      </mLayers>
+      <mTransitionAlphaRange value="0.780000" />
+      <mTransitionMidPoint value="0.780000" />
+      <mEnabled value="true" />
+      <mAngularVelocity x="0.000000" y="0.000000" z="0.001000" />
+      <mAnimBlendWeights x="1.000000" y="1.225000" z="0.525000" />
+      <mUVVelocity content="vec2v_array">
+        0.000000	0.000000	
+        0.010000	0.007000	
+        0.008000	0.004000	
+      </mUVVelocity>
+      <mAnimMode content="char_array">
+        0 
+        1 
+        1 
+      </mAnimMode>
+      <mShowLayer>
+        <Item value="true" />
+        <Item value="true" />
+        <Item value="true" />
+      </mShowLayer>
+      <mEnableAnimations value="true" />
+    </Item>
+  </mCloudHatFrags>
+  <mDesiredTransitionTimeSec value="30.000000" />
+  <mCamPositionScaler x="1.000000" y="1.000000" z="0.725000" />
+  <mAltitudeScrollScaler value="0.000100" />
+</CloudHatManager>

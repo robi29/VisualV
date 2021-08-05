@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CPlayerSwitchInterface>
+  <switchSettings>
+    <Item>
+      <name>SWITCH_TYPE_AUTO</name>
+      <range value="0.000000" />
+      <numJumpsMin value="0" />
+      <numJumpsMax value="0" />
+      <panSpeed value="0.000000" />
+      <ceilingHeight value="0.000000" />
+      <minHeightAbove value="0.000000" />
+      <ceilingLodLevel>LODTYPES_DEPTH_HD</ceilingLodLevel>
+      <heightBetweenJumps value="0.000000" />
+      <skipPanRange value="0.000000" />
+      <maxTimeToStayInStartupModeOnLongRangeDescent value="0" />
+      <scenarioAnimsTimeout value="0" />
+      <radiusOfStreamedScenarioPedCheck value="0.000000" />
+    </Item>
+    <Item>
+      <name>SWITCH_TYPE_LONG</name>
+      <range value="0.000000" />
+      <numJumpsMin value="1" />
+      <numJumpsMax value="3" />
+      <panSpeed value="2000.000000" />
+      <ceilingHeight value="1190.000000" />
+      <minHeightAbove value="100.000000" />
+      <ceilingLodLevel>LODTYPES_DEPTH_SLOD2</ceilingLodLevel>
+      <heightBetweenJumps value="260.000000" />
+      <skipPanRange value="200.000000" />
+      <maxTimeToStayInStartupModeOnLongRangeDescent value="2200" />
+      <scenarioAnimsTimeout value="2450" />
+      <radiusOfStreamedScenarioPedCheck value="20.000000" />
+    </Item>
+    <Item>
+      <name>SWITCH_TYPE_MEDIUM</name>
+      <range value="600.000000" />
+      <numJumpsMin value="1" />
+      <numJumpsMax value="3" />
+      <panSpeed value="1200.000000" />
+      <ceilingHeight value="600.000000" />
+      <minHeightAbove value="200.000000" />
+      <ceilingLodLevel>LODTYPES_DEPTH_SLOD1</ceilingLodLevel>
+      <heightBetweenJumps value="450.000000" />
+      <skipPanRange value="40.000000" />
+      <maxTimeToStayInStartupModeOnLongRangeDescent value="1600" />
+      <scenarioAnimsTimeout value="1850" />
+      <radiusOfStreamedScenarioPedCheck value="15.000000" />
+    </Item>
+    <Item>
+      <name>SWITCH_TYPE_SHORT</name>
+      <range value="70.000000" />
+      <numJumpsMin value="0" />
+      <numJumpsMax value="0" />
+      <panSpeed value="0.000000" />
+      <ceilingHeight value="0.000000" />
+      <minHeightAbove value="0.000000" />
+      <ceilingLodLevel>LODTYPES_DEPTH_HD</ceilingLodLevel>
+      <heightBetweenJumps value="0.000000" />
+      <skipPanRange value="0.000000" />
+      <maxTimeToStayInStartupModeOnLongRangeDescent value="0" />
+      <scenarioAnimsTimeout value="0" />
+      <radiusOfStreamedScenarioPedCheck value="0.000000" />
+    </Item>
+  </switchSettings>
+</CPlayerSwitchInterface>
