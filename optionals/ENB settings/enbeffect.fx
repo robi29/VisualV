@@ -83,6 +83,15 @@ SamplerState ExampleSampler
 	AddressU = Clamp;
 	AddressV = Clamp;
 };
+
+int	ExampleDropdown
+<
+	string UIName="Example Dropdown";
+	string UIWidget="dropdown";
+	string UIList="x1, x2, x3,x5";
+	int UIMin=0;
+	int UIMax=3;
+>;
 */
 
 
