@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- VisualV 1.0.550 -->
+<!-- VisualV 1.0.560 -->
 <!-- DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS! -->
 <timecycle_modifier_data version="1.000000">
 	<modifier name="default" numMods="0" userFlags="0" />
@@ -7319,5 +7319,226 @@
     <blur_vignetting_radius>31.500 0.000</blur_vignetting_radius>
     <blur_vignetting_intensity>0.273 0.000</blur_vignetting_intensity>
     <screen_blur_intensity>0.150 0.000</screen_blur_intensity>
+  </modifier>
+   <modifier name="PlayerWakeUp" numMods="35" userFlags="0">
+    <postfx_exposure>1.000 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh>1.000 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <postfx_correct_col_r>1.000 0.000</postfx_correct_col_r>
+    <postfx_correct_col_g>1.000 0.000</postfx_correct_col_g>
+    <postfx_correct_col_b>0.796 0.000</postfx_correct_col_b>
+    <postfx_shift_cutoff>0.100 0.000</postfx_shift_cutoff>
+    <postfx_desaturation>0.650 0.000</postfx_desaturation>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>2.000 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.235 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.600 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.395 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.010 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.100 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_w>4.000 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.572 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.200 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.103 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.225 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.010 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.300 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_tonemap_filmic_w_bright>4.000 0.000</postfx_tonemap_filmic_w_bright>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>20.000 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_contrast>0.000 0.000</postfx_vignetting_contrast>
+    <postfx_vignetting_col_r>0.000 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.000 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.000 0.000</postfx_vignetting_col_b>
+    <lens_dist_coeff>-0.500 0.000</lens_dist_coeff>
+    <chrom_aberration_coeff>-0.100 0.000</chrom_aberration_coeff>
+    <screen_blur_intensity>1.000 0.000</screen_blur_intensity>
+  </modifier>
+  <modifier name="DaxTrip01" numMods="51" userFlags="0">
+    <ped_light_col_r>0.675 1.000</ped_light_col_r>
+    <ped_light_col_g>1.000 1.000</ped_light_col_g>
+    <ped_light_col_b>0.647 1.000</ped_light_col_b>
+    <ped_light_mult>0.700 1.000</ped_light_mult>
+    <light_dynamic_bake_tweak>-2.000 0.000</light_dynamic_bake_tweak>
+    <postfx_bright_pass_thresh>0.750 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.500 0.000</postfx_intensity_bloom>
+    <postfx_desaturation>4.150 0.000</postfx_desaturation>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>16.000 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>2.816 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>10.360 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>8.768 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.525 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.960 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_w>10.912 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.220 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.100 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.900 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>1.000 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.010 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.300 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_tonemap_filmic_w_bright>4.000 0.000</postfx_tonemap_filmic_w_bright>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>5.000 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_contrast>0.105 0.000</postfx_vignetting_contrast>
+    <postfx_vignetting_col_r>1.000 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.635 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.369 0.000</postfx_vignetting_col_b>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.584 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.384 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.839 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.702 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>0.227 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.973 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.224 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_midpoint>0.695 0.000</postfx_grad_midpoint>
+    <lens_dist_coeff>-0.508 0.000</lens_dist_coeff>
+    <lens_dist_cube_coeff>-0.088 0.000</lens_dist_cube_coeff>
+    <chrom_aberration_coeff>-1.000 0.000</chrom_aberration_coeff>
+    <chrom_aberration_coeff2>-0.802 0.000</chrom_aberration_coeff2>
+    <lens_artefacts_intensity>1.000 0.000</lens_artefacts_intensity>
+    <lens_artefacts_min_exp_intensity>10.000 0.000</lens_artefacts_min_exp_intensity>
+    <lens_artefacts_max_exp_intensity>10.000 0.000</lens_artefacts_max_exp_intensity>
+    <blur_vignetting_radius>6.500 0.000</blur_vignetting_radius>
+    <blur_vignetting_intensity>0.900 0.000</blur_vignetting_intensity>
+  </modifier>
+  <modifier name="DaxTrip02" numMods="31" userFlags="0">
+    <postfx_bright_pass_thresh>0.265 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <postfx_correct_col_r>0.627 0.000</postfx_correct_col_r>
+    <postfx_correct_col_g>0.878 0.000</postfx_correct_col_g>
+    <postfx_correct_col_b>1.000 0.000</postfx_correct_col_b>
+    <postfx_shift_col_r>1.000 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>0.424 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>0.051 1.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>1.482 0.000</postfx_shift_cutoff>
+    <postfx_desaturation>4.000 0.000</postfx_desaturation>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.400 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.300 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.200 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.384 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.450 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.200 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.200 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.200 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_contrast>0.041 0.000</postfx_vignetting_contrast>
+    <postfx_vignetting_col_r>0.012 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.078 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.631 0.000</postfx_vignetting_col_b>
+    <lens_dist_cube_coeff>-0.500 0.000</lens_dist_cube_coeff>
+    <chrom_aberration_coeff2>-0.100 0.000</chrom_aberration_coeff2>
+    <blur_vignetting_radius>31.500 0.000</blur_vignetting_radius>
+    <blur_vignetting_intensity>0.273 0.000</blur_vignetting_intensity>
+  </modifier>
+  <modifier name="DaxTrip03" numMods="50" userFlags="0">
+    <ped_light_col_r>0.675 1.000</ped_light_col_r>
+    <ped_light_col_g>1.000 1.000</ped_light_col_g>
+    <ped_light_col_b>0.643 1.000</ped_light_col_b>
+    <ped_light_mult>0.700 1.000</ped_light_mult>
+    <light_dynamic_bake_tweak>-2.000 0.000</light_dynamic_bake_tweak>
+    <postfx_bright_pass_thresh>1.000 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <postfx_shift_col_r>0.000 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>0.000 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>0.000 1.000</postfx_shift_col_b>
+    <postfx_desaturation>4.000 0.000</postfx_desaturation>
+    <postfx_noise>0.400 0.000</postfx_noise>
+    <postfx_noise_size>0.500 0.000</postfx_noise_size>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>16.000 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>2.816 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>10.360 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>8.768 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.525 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.960 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_w>10.912 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>1.000 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.596 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.950 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>1.000 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>10.000 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_contrast>0.100 0.000</postfx_vignetting_contrast>
+    <postfx_vignetting_col_r>0.388 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.259 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.165 0.000</postfx_vignetting_col_b>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.435 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.208 0.000</postfx_grad_top_col_b>
+    <postfx_grad_bottom_col_r>0.063 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.663 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.063 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <lens_dist_coeff>-0.508 0.000</lens_dist_coeff>
+    <lens_dist_cube_coeff>-0.088 0.000</lens_dist_cube_coeff>
+    <chrom_aberration_coeff>-1.000 0.000</chrom_aberration_coeff>
+    <chrom_aberration_coeff2>-0.802 0.000</chrom_aberration_coeff2>
+    <lens_artefacts_intensity>1.000 0.000</lens_artefacts_intensity>
+    <lens_artefacts_min_exp_intensity>10.000 0.000</lens_artefacts_min_exp_intensity>
+    <lens_artefacts_max_exp_intensity>10.000 0.000</lens_artefacts_max_exp_intensity>
+    <blur_vignetting_radius>6.500 0.000</blur_vignetting_radius>
+    <blur_vignetting_intensity>0.900 0.000</blur_vignetting_intensity>
+  </modifier>
+  <modifier name="Dax_TripBase" numMods="32" userFlags="0">
+    <postfx_desaturation>2.000 0.000</postfx_desaturation>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_e>0.010 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.096 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_b_bright>0.200 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.103 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.225 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.010 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.300 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_tonemap_filmic_w_bright>4.000 0.000</postfx_tonemap_filmic_w_bright>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>2.500 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_col_r>0.529 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.000 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.529 0.000</postfx_vignetting_col_b>
+    <lens_dist_coeff>-0.500 0.000</lens_dist_coeff>
+    <chrom_aberration_coeff>-1.000 0.000</chrom_aberration_coeff>
+    <blur_vignetting_intensity>1.000 0.000</blur_vignetting_intensity>
+    <lens_artefacts_intensity>1.000 0.000</lens_artefacts_intensity>
+    <lens_artefacts_min_exp_intensity>10.000 0.000</lens_artefacts_min_exp_intensity>
+    <lens_artefacts_max_exp_intensity>10.000 0.000</lens_artefacts_max_exp_intensity>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_w>4.000 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_a_bright>0.400 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_a>2.000 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.256 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>1.056 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.576 0.000</postfx_tonemap_filmic_d>
+    <blur_vignetting_radius>15.000 0.000</blur_vignetting_radius>
+    <light_dynamic_bake_tweak>2.000 0.000</light_dynamic_bake_tweak>
+  </modifier>
+  <modifier name="Dax_TripBlend01" numMods="4" userFlags="0">
+    <postfx_shift_col_r>0.000 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>0.306 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>1.000 1.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>0.500 0.000</postfx_shift_cutoff>
+  </modifier>
+  <modifier name="Dax_TripBlend02" numMods="4" userFlags="0">
+    <postfx_shift_col_r>1.000 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>0.000 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>0.412 1.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>0.500 0.000</postfx_shift_cutoff>
   </modifier>
 </timecycle_modifier_data>
