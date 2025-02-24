@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- VisualV 1.0.590 -->
+<!-- VisualV 1.0.600 -->
 <!-- DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS! -->
 <timecycle_modifier_data version="1.000000">
 	<modifier name="default" numMods="0" userFlags="0" />
@@ -7640,5 +7640,99 @@
   <modifier name="DragRaceBloom" numMods="2" userFlags="0">
     <postfx_bright_pass_thresh>0.100 0.000</postfx_bright_pass_thresh>
     <postfx_intensity_bloom>0.375 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="NitrousLight" numMods="25" userFlags="0">
+    <postfx_shift_col_r>1.000 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>1.000 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>0.220 1.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>1.000 0.000</postfx_shift_cutoff>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>7.500 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.025 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.032 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.027 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.029 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.238 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.490 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.025 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.032 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.220 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.029 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.238 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>6.000 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_col_r>0.000 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.000 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.000 0.000</postfx_vignetting_col_b>
+  </modifier>
+  <modifier name="NitrousDark" numMods="25" userFlags="0">
+    <postfx_shift_col_r>1.000 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>0.667 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>0.220 1.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>0.750 0.000</postfx_shift_cutoff>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>12.000 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.025 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.032 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.057 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.029 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.238 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>1.000 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.025 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.032 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.284 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.029 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.238 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>6.000 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_col_r>0.000 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.000 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>0.000 0.000</postfx_vignetting_col_b>
+  </modifier>
+  <modifier name="420WeedVan" numMods="38" userFlags="0">
+    <postfx_shift_col_r>1.000 1.000</postfx_shift_col_r>
+    <postfx_shift_col_g>0.424 1.000</postfx_shift_col_g>
+    <postfx_shift_col_b>0.051 1.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>1.482 0.000</postfx_shift_cutoff>
+    <postfx_desaturation>1.650 0.000</postfx_desaturation>
+    <postfx_vignetting_intensity>1.000 0.000</postfx_vignetting_intensity>
+    <postfx_vignetting_radius>11.500 0.000</postfx_vignetting_radius>
+    <postfx_vignetting_contrast>0.041 0.000</postfx_vignetting_contrast>
+    <lens_dist_coeff>-0.784 0.000</lens_dist_coeff>
+    <lens_dist_cube_coeff>-0.022 0.000</lens_dist_cube_coeff>
+    <chrom_aberration_coeff>0.015 0.000</chrom_aberration_coeff>
+    <chrom_aberration_coeff2>0.000 0.000</chrom_aberration_coeff2>
+    <blur_vignetting_radius>31.500 0.000</blur_vignetting_radius>
+    <blur_vignetting_intensity>0.273 0.000</blur_vignetting_intensity>
+    <screen_blur_intensity>0.150 0.000</screen_blur_intensity>
+    <postfx_vignetting_col_r>0.141 0.000</postfx_vignetting_col_r>
+    <postfx_vignetting_col_g>0.510 0.000</postfx_vignetting_col_g>
+    <postfx_vignetting_col_b>1.000 0.000</postfx_vignetting_col_b>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_w>4.000 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_f>0.100 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_e>0.010 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_d>0.384 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_c>0.640 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_b>0.300 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_a>4.000 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.400 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.200 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.200 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.200 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.010 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.300 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_tonemap_filmic_w_bright>4.000 0.000</postfx_tonemap_filmic_w_bright>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <postfx_bright_pass_thresh>0.500 0.000</postfx_bright_pass_thresh>
   </modifier>
 </timecycle_modifier_data>
