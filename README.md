@@ -1,4 +1,4 @@
-# VisualV
+# VisualV (Legacy version)
 VisualV is a graphic overhaul modification for Grand Theft Auto V, bringing you a completely redone weather effects, edited modificators for areas/interiors, improved color correction and much much more to add some life to Los Santos and Blaine County as well as a fixed rendering code, so your playing experience will be more smooth and nicer.
 
 # What was changed in VisualV?
