@@ -1460,7 +1460,7 @@
     <artificial_int_ambient_multiplier>0.700 0.000</artificial_int_ambient_multiplier>
     <no_weather_fx>1.000 0.000</no_weather_fx>
   </modifier>
-  <modifier name="FrankilinsHOUSEhills" numMods="29" userFlags="0">
+  <modifier name="FrankilinsHOUSEhills" numMods="28" userFlags="0">
     <light_amb_down_wrap>0.400 0.000</light_amb_down_wrap>
     <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
     <light_artificial_int_down_col_g>0.729 1.000</light_artificial_int_down_col_g>
@@ -1487,7 +1487,6 @@
     <reflection_tweak_exterior_amb>0.000 0.000</reflection_tweak_exterior_amb>
     <reflection_tweak_emissive>35.200 0.000</reflection_tweak_emissive>
     <reflection_tweak_directional>0.000 0.000</reflection_tweak_directional>
-    <far_clip>2000.000 2000.000</far_clip>
     <natural_ambient_multiplier>0.200 0.000</natural_ambient_multiplier>
     <artificial_int_ambient_multiplier>0.800 0.000</artificial_int_ambient_multiplier>
   </modifier>
@@ -13423,7 +13422,30 @@
     <ped_light_col_g>0.624 1.000</ped_light_col_g>
     <ped_light_col_b>0.396 1.000</ped_light_col_b>
   </modifier>
-  <modifier name="NewMod" numMods="0" userFlags="0" />
+  <modifier name="HDRscreenMod" numMods="22" userFlags="4">
+    <light_dir_col_r>1.000 1.000</light_dir_col_r>
+    <light_dir_col_g>0.820 1.000</light_dir_col_g>
+    <light_dir_col_b>0.663 1.000</light_dir_col_b>
+    <light_dir_mult>48.000 1.000</light_dir_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.190 0.000</sun_direction_x>
+    <sun_direction_y>-0.180 0.000</sun_direction_y>
+    <sun_direction_z>0.072 0.000</sun_direction_z>
+    <postfx_exposure>0.300 0.000</postfx_exposure>
+    <postfx_intensity_bloom>0.300 0.000</postfx_intensity_bloom>
+    <dof_enable_hq>1.000 0.000</dof_enable_hq>
+    <dof_hq_shallowdof>1.000 0.000</dof_hq_shallowdof>
+    <dof_hq_nearplane_out>0.000 0.000</dof_hq_nearplane_out>
+    <dof_hq_nearplane_in>4.000 0.000</dof_hq_nearplane_in>
+    <dof_hq_farplane_out>4283.440 0.000</dof_hq_farplane_out>
+    <dof_hq_farplane_in>25000.000 0.000</dof_hq_farplane_in>
+    <lens_dist_coeff>-0.172 0.000</lens_dist_coeff>
+    <lens_dist_cube_coeff>-0.104 0.000</lens_dist_cube_coeff>
+    <chrom_aberration_coeff>0.004 0.000</chrom_aberration_coeff>
+    <chrom_aberration_coeff2>-0.018 0.000</chrom_aberration_coeff2>
+    <screen_blur_intensity>0.000 0.000</screen_blur_intensity>
+  </modifier>
   <modifier name="MP_casino_apartment_colour2" numMods="9" userFlags="2">
     <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
     <light_artificial_int_down_col_g>0.698 1.000</light_artificial_int_down_col_g>
@@ -16944,6 +16966,38 @@
     <reflection_tweak_emissive>10.000 0.000</reflection_tweak_emissive>
     <natural_ambient_multiplier>0.000 0.000</natural_ambient_multiplier>
     <artificial_int_ambient_multiplier>0.500 0.000</artificial_int_ambient_multiplier>
+  </modifier>
+  <modifier name="GEN9_MIG_INT_garg_int" numMods="19" userFlags="0">
+    <light_directional_amb_intensity>0.000 0.000</light_directional_amb_intensity>
+    <light_directional_amb_bounce_enabled>0.000 0.000</light_directional_amb_bounce_enabled>
+    <light_natural_amb_down_col_r>0.000 0.500</light_natural_amb_down_col_r>
+    <light_natural_amb_down_col_g>0.004 0.500</light_natural_amb_down_col_g>
+    <light_natural_amb_down_col_b>0.012 0.500</light_natural_amb_down_col_b>
+    <light_natural_amb_down_intensity>1.000 0.000</light_natural_amb_down_intensity>
+    <light_natural_amb_up_col_r>0.000 0.800</light_natural_amb_up_col_r>
+    <light_natural_amb_up_col_g>0.000 0.800</light_natural_amb_up_col_g>
+    <light_natural_amb_up_col_b>0.000 0.800</light_natural_amb_up_col_b>
+    <light_natural_amb_up_intensity>0.250 0.000</light_natural_amb_up_intensity>
+    <light_natural_push>0.750 0.000</light_natural_push>
+    <ssao_inten>5.000 0.000</ssao_inten>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_bright_pass_thresh_width>0.000 0.000</postfx_bright_pass_thresh_width>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <postfx_tonemap_filmic_override_dark>0.000 0.000</postfx_tonemap_filmic_override_dark>
+    <reflection_hdr_mult>0.400 0.000</reflection_hdr_mult>
+    <natural_ambient_multiplier>1.000 0.000</natural_ambient_multiplier>
+    <no_weather_fx>1.000 0.000</no_weather_fx>
+  </modifier>
+  <modifier name="Gen9_HDRScreen" numMods="9" userFlags="0">
+    <light_dir_col_r>1.000 1.000</light_dir_col_r>
+    <light_dir_col_g>0.796 1.000</light_dir_col_g>
+    <light_dir_col_b>0.659 1.000</light_dir_col_b>
+    <light_dir_mult>54.092 1.000</light_dir_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.845 0.000</sun_direction_x>
+    <sun_direction_y>-0.815 0.000</sun_direction_y>
+    <sun_direction_z>0.381 0.000</sun_direction_z>
   </modifier>
   <modifier name="DLC_MpSecurity_office_Stairs" numMods="20" userFlags="2">
     <light_artificial_int_down_col_r>0.663 1.000</light_artificial_int_down_col_r>

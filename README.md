@@ -1,4 +1,4 @@
-# VisualV
+# VisualV (Enhanced version)
 VisualV is a graphic overhaul modification for Grand Theft Auto V, bringing you a completely redone weather effects, edited modificators for areas/interiors, improved color correction and much much more to add some life to Los Santos and Blaine County as well as a fixed rendering code, so your playing experience will be more smooth and nicer.
 
 # What was changed in VisualV?
@@ -15,31 +15,21 @@ VisualV is a graphic overhaul modification for Grand Theft Auto V, bringing you 
 - And many, many minor fixes.
 
 
-VisualV has its own ReShade and ENB presets, with heat haze effect available for VisualV only.
+VisualV has its own ReShade preset, with heat haze effect available for VisualV only.
 
 VisualV has introduced several optional changes to improve your game experience, here is the list of them:
 
-- Advanced motion blur - enables motion blur, effect is stronger adequately to vehicle's speed.
-- Better positioning of pause menu - slightly changed Options tab, added First Person menu, Graphics and Advanced Graphics tabs are sorted better.
-- Dynamic shadows from pedestrian vehicles - renders shadows from vehicle's headlights driven by NPC.
-- Earth's Atmosphere - script, which changes a sky behaviour when flying on high altitude, sky is getting darker.
-- Enabled blur during weapons radiostations switching - self explained.
-- ENB settings - ENB config, more informations above.
-- Removed grass dithering + trees reflections - removes grass dithering, especially visible in Los Santos; trees are now visible in reflections.
-- No coronas - removes vehicles coronas.
-- No lens flares - removes lens flares from the game.
-- Original coronas lights - restores vanilla settings of lights like strength, intensity of distant lights etc.
+- Removed grass dithering + trees reflections - removes grass dithering, especially visible in Los Santos
 - Procedural shadows - enables shadows casted by small objects like cans, rubbish on the tarmac etc. (may cause reduced game performance).
-- RadianceV compatibility - adds compatibility to RadianceV mod.
 - ReShade preset - ReShade settings exclusive to VisualV, with MXAO shading technique, ambient light and heat haze effect.
 
-# Installation
-For OpenIV modPackage:
-1. Install OpenIV - http://openiv.com/WebIV/guest.php?get=1
-2. Install ScriptHook to use our scripts: http://www.dev-c.com/gtav/scripthookv/
-3. Run OpenIV, click Tools -> ASI Manager and install ASI Loader and OpenIV.asi.
-4. Click Tools -> Package Installer and choose VisualV.oiv.
-5. Choose Install to mods folder.
+# Manual installation
+Only manual installation is doable at this time:
+1. Download CodeWalker 30, dev48 version or newer from CodeWalker Discord server: https://discord.gg/codewalker
+2. Download and install OpenRPF: https://www.gta5-mods.com/tools/openrpf-openiv-asi-for-gta-v-enhanced
+3. Go to GTAV Enhanced folder, create "mods" folder, then create "update" folder.
+4. Copy update.rpf file from "update" to "mods\update"
+5. Run CodeWalker and put files from "manual installation" folder to respective directiories in mods\update\update.rpf
 
 
 If you have ANY problem with GTA V modding, go here:
@@ -48,16 +38,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=558079253
 Previous versions of VisualV are available here:
 https://www.mediafire.com/folder/vrv4z3navwafa/VisualV 
 
-# Known bugs
-- Advanced motion blur is not compatibile with NaturalVision Remastered scripts (game doesn't allow to use more than one timecycle modifier using natives).
-
 # View the topic on GTAForums
 http://gtaforums.com/topic/792891-vwipvisualv
-
-# ENB Series installation
-Firstly, download ENB Series here and install it to GTAV directory: http://enbdev.com/mod_gta5_v0456.htm
-
-Copy all files in "ENB settings" to root folder of Grand Theft Auto V (e.g. C:\Games\Rockstar Games\Grand Theft Auto V).
 
 # ReShade installation
 If you want to use our ReShade preset, go through these steps:
@@ -68,17 +50,6 @@ How to control effects:
 - Press F9 to enable/disable ambient light.
 - Press F10 to enable/disable MXAO and IL.
 - Press F11 to enable/disable heat haze effect.
-
-# ENB Series + ReShade
-If you want to have ENB Series and ReShade preset at the same time, you have to set "EnableProxyLibrary" to true, "InitProxyFunctions" to false and "ProxyLibrary" value to d3d11.dll.
-
-For example:
-```
-[PROXY]
-EnableProxyLibrary=true
-InitProxyFunctions=false
-ProxyLibrary=d3d11.dll
-```
 
 # ASI scripts
 Source codes for ASI scripts used in VisualV are available here: https://github.com/robi29/GTAVScripts

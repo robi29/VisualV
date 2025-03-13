@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- VisualV 1.0.600 -->
+<!-- VisualV 2.0.610 -->
 <!-- DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS! -->
 <timecycle_keyframe_data version="1.000000">
 <cycle name="OVERCAST" regions="2">
@@ -235,7 +235,7 @@
 
 		<dir_shadow_num_cascades> 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000</dir_shadow_num_cascades>
 		<dir_shadow_distance_multiplier> 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000</dir_shadow_distance_multiplier>
-		<dir_shadow_softness> 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000</dir_shadow_softness>
+		<dir_shadow_softness> 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</dir_shadow_softness>
 		<dir_shadow_sharpness> 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</dir_shadow_sharpness>
 		<dir_shadow_cascade0_scale> 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000</dir_shadow_cascade0_scale>
 
@@ -743,7 +743,7 @@
 
 		<dir_shadow_num_cascades> 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000</dir_shadow_num_cascades>
 		<dir_shadow_distance_multiplier> 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000</dir_shadow_distance_multiplier>
-		<dir_shadow_softness> 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000</dir_shadow_softness>
+		<dir_shadow_softness> 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</dir_shadow_softness>
 		<dir_shadow_sharpness> 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</dir_shadow_sharpness>
 		<dir_shadow_cascade0_scale> 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000 1.5000</dir_shadow_cascade0_scale>
 

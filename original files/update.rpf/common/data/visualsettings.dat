@@ -43,6 +43,17 @@ rain.defaultlight.green	1.00
 rain.defaultlight.blue	1.00
 rain.defaultlight.alpha	16.00
 
+#Values for FSR3
+fsr3.masks.enabled 1.00
+fsr3.masks.responsive_scale 0.5
+fsr3.masks.transparency_alpha_scale 1.00
+fsr3.masks.transparency_scale 1.00
+fsr3.masks.transparency_max 1.00
+fsr3.masks.reactivity_particle_alpha_min 0.00
+fsr3.masks.reactivity_particle_alpha_scale 1.00
+fsr3.masks.reactivity_scale 1.00
+fsr3.masks.reactivity_max 0.95
+
 #General weather configuration
 weather.CycleDuration 120
 weather.ChangeCloudOnSameCloudTypeChance 0.5
@@ -887,8 +898,8 @@ misc.coronas.zBiasMultiplier					30.0
 misc.coronas.zBiasDistanceNear					50.0
 misc.coronas.zBiasDistanceFar					500.0
 misc.coronas.zBias.fromFinalSizeMultiplier 		0.1
-misc.coronas.occlusionSizeScale					0.5
-misc.coronas.occlusionSizeMax					32.0
+misc.coronas.occlusionSizeScale					0.1
+misc.coronas.occlusionSizeMax					16.0
 misc.coronas.flareCoronaSizeRatio				0.17
 misc.coronas.flareMinAngleDegToFadeIn			30.0
 misc.coronas.flareScreenCenterOffsetSizeMult	200.0
@@ -1041,11 +1052,16 @@ Exposure.curve.power	0.007
 Exposure.curve.offset	104.700
 
 # Adaptation
-Adaptation.min.step.size 	0.15
+Adaptation.min.step.size 	0.0001
 Adaptation.max.step.size 	3.0
 Adaptation.step.size.mult 	1.5
 Adaptation.threshold 		0.0
 Adaptation.sun.exposure.tweak	-2
+
+Adaptation.hdr.min.step.size 	0.0001
+Adaptation.hdr.max.step.size 	3.0
+Adaptation.hdr.step.size.mult 	1.5
+Adaptation.hdr.threshold 		0.0
 
 # Cloud generation
 cloudgen.frequency 				2.0
@@ -1112,6 +1128,55 @@ dynamic.bake.start.max			1.7
 
 dynamic.bake.end.min			0.3
 dynamic.bake.end.max			1.3
+
+// Temporal AA
+temporalaa.convergenceTime			0.15
+temporalaa.responsiveConvergenceTime 		0.1
+
+temporalaa.convergenceTimeDepthMin		0.0
+temporalaa.convergenceTimeDepthMax		250.0
+temporalaa.convergenceTimeFar			1.0
+
+temporalaa.convergenceTimeForwardSpeedMin	0.0
+temporalaa.convergenceTimeForwardSpeedMax	0.1
+temporalaa.convergenceTimeForward		0.2
+
+temporalaa.waterConvergenceTime			0.05
+temporalaa.waterConvergenceTimeFar		0.35
+temporalaa.waterBlendDepthMin			3.0
+temporalaa.waterBlendDepthMax			150.0
+
+temporalaa.enableFilter.screenSpaceShadows	1.0
+
+temporalaa.exposureScale			1.0
+temporalaa.exposureOffset			0.0
+
+//temporalaa.forceResponsiveVegetation		1.0
+
+temporalaa.varianceGammaMin			0.5
+temporalaa.varianceGammaMax			1.25
+temporalaa.varianceGammaResponsive	0.9
+temporalaa.varianceVelocityMax		0.003
+temporalaa.varianceGammaLumScale	0.5
+temporalaa.varianceAntiFlickerLumMin	0.3
+temporalaa.varianceAntiFlickerLumMax	0.4
+
+sharpen.intensity				0.15
+
+// SSDO
+ssdo.obscurance_normalizer_exterior		1.0
+ssdo.obscurance_normalizer_interior		1.0
+ssdo.obscurance_radius_min				0.05
+ssdo.obscurance_radius_max				0.5
+ssdo.local_light_ao_intensity_exterior	1.0
+ssdo.local_light_ao_intensity_interior	0.85
+ssdo.screen_space_width_min				0.02
+ssdo.screen_space_width_max				0.1
+ssdo.reflection_occlusion_strength		8.0
+ssdo.reflection_occlusion_bias			0.08
+ssdo.upscale_dither_radius				4.0
+ssdo.temporal_blend_taa_on				0.8
+ssdo.temporal_blend_taa_off				0.95
 
 // Minimap alpha
 UI.minimap.alpha				0.6
@@ -1248,6 +1313,42 @@ ped.phonelight.falloffexp		15.0
 ped.phonelight.cone.inner		0.0
 ped.phonelight.cone.outer		90.0
 
+bloom.pbrintensity          0.15
+
+bloom.airy.enable 			0.0
+bloom.airy.downsampledInput 0.0
+bloom.airy.weight2			0.712
+bloom.airy.weight4			0.705
+bloom.airy.weight8			0.678
+bloom.airy.weight16			0.652
+bloom.airy.weight32			0.590
+bloom.airy.weight64			0.484
+bloom.airy.weight128		0.319
+bloom.airy.weight256		0.200
+
+
+bloom.airy.colour2.red 		1.0
+bloom.airy.colour2.green	1.0
+bloom.airy.colour2.blue		1.0
+bloom.airy.colour4.red 		1.0
+bloom.airy.colour4.green	1.0
+bloom.airy.colour4.blue		1.0
+bloom.airy.colour8.red 		1.0
+bloom.airy.colour8.green	1.0
+bloom.airy.colour8.blue		1.0
+bloom.airy.colour16.red 	1.0
+bloom.airy.colour16.green	1.0
+bloom.airy.colour16.blue	1.0
+bloom.airy.colour32.red 	1.0
+bloom.airy.colour32.green	1.0
+bloom.airy.colour32.blue	1.0
+bloom.airy.colour64.red 	1.0
+bloom.airy.colour64.green	1.0
+bloom.airy.colour64.blue	1.0
+bloom.airy.colour128.red 	1.0
+bloom.airy.colour128.green	1.0
+bloom.airy.colour128.blue	1.0
+
 //Adaptive DOF - PC/NG Only
 adaptivedof.range.verynear			5
 adaptivedof.range.near				20
@@ -1358,9 +1459,6 @@ bokeh.alphaCutoff					0.15
 bokeh.shapeExposureRangeMin				-3.0
 bokeh.shapeExposureRangeMax				1.0
 
-defaultmotionblur.enabled				1
-defaultmotionblur.strength			0.1
-
 procObjects.minRadiusForHeightMap			0.4
 
 // Multipiers over final shadow cascade.
@@ -1373,9 +1471,161 @@ lensflare.hide.length	495
 lensflare.show.length	264
 lensflare.desaturation.boost 1.6
 
-// First person motion blur
+// Default motion blur (old)
+defaultmotionblur.enabled				1
+defaultmotionblur.strength			0.1
+
+// First person motion blur (old)
 fpv.motionblur.weight0 1.0
 fpv.motionblur.weight1 0.0
 fpv.motionblur.weight2 0.8
 fpv.motionblur.weight3 1.0
 fpv.motionblur.max.velocity 32.0
+
+// Motion blur for third person view
+defaultmotionblur.new.enabled			1
+defaultmotionblur.new.strength			0.2
+motionblur.MBTargetMinSpeed 0.1
+motionblur.MBTargetMaxSpeed 10.0
+motionblur.MBLowSpeedScale 0.75
+motionblur.MBHighSpeedScale 1.5
+motionblur.MBCameraRotMinSpeed 0.0
+motionblur.MBCameraRotMaxSpeed 5.0
+motionblur.MBLowCameraRotSpeedScale 1.0
+motionblur.MBHighCameraRotSpeedScale 0.5
+motionblur.MassiveBlurThreshold		330
+
+// Motion blur for First person view
+defaultmotionblur.fpv.enabled		1
+defaultmotionblur.fpv.strength		0.2
+motionblur.fpv.MBTargetMinSpeed 0.1
+motionblur.fpv.MBTargetMaxSpeed 10.0
+motionblur.fpv.MBLowSpeedScale 0.75
+motionblur.fpv.MBHighSpeedScale 1.25
+motionblur.fpv.MBCameraRotMinSpeed 0.0
+motionblur.fpv.MBCameraRotMaxSpeed 5.0
+motionblur.fpv.MBLowCameraRotSpeedScale 0.75
+motionblur.fpv.MBHighCameraRotSpeedScale 0.5
+
+lights.screenshadow.numSamples            0.0
+lights.screenshadow.raylength             0.057
+lights.screenshadow.cutoff                0.05
+lights.screenshadow.strength              0.6
+lights.screenshadow.noldist               80.0
+lights.screenshadow.wraplightingdepthbias 0.035
+
+# Composite dithering
+dynamicDithering.Enabled			1
+
+dynamicDithering.LDR.Min.Range		255
+dynamicDithering.LDR.Max.Range		255
+dynamicDithering.LDR.Luminance.Min	0.00
+dynamicDithering.LDR.Luminance.Max	1.00
+
+dynamicDithering.HDR.Min.R.Range	2048
+dynamicDithering.HDR.Max.R.Range	128
+dynamicDithering.HDR.Min.G.Range	2048
+dynamicDithering.HDR.Max.G.Range	128
+dynamicDithering.HDR.Min.B.Range	2048
+dynamicDithering.HDR.Max.B.Range	128
+
+dynamicDithering.Luminance.R.Min	0.00
+dynamicDithering.Luminance.R.Max	1.00
+dynamicDithering.Luminance.G.Min	0.00
+dynamicDithering.Luminance.G.Max	1.00
+dynamicDithering.Luminance.B.Min	0.00
+dynamicDithering.Luminance.B.Max	1.00
+
+dynamicDithering.CurveExponent		2.0
+
+dynamicDithering.UsePerChannelLuminance 0.0
+
+dynamicDithering.4K.Enabled			1
+
+dynamicDithering.4K.LDR.Min.Range		255
+dynamicDithering.4K.LDR.Max.Range		255
+dynamicDithering.4K.LDR.Luminance.Min	0.00
+dynamicDithering.4K.LDR.Luminance.Max	1.00
+
+dynamicDithering.4K.HDR.Min.R.Range	2048
+dynamicDithering.4K.HDR.Max.R.Range	32
+dynamicDithering.4K.HDR.Min.G.Range	2048
+dynamicDithering.4K.HDR.Max.G.Range	32
+dynamicDithering.4K.HDR.Min.B.Range	2048
+dynamicDithering.4K.HDR.Max.B.Range	32
+
+dynamicDithering.4K.Luminance.R.Min	0.00
+dynamicDithering.4K.Luminance.R.Max	1.00
+dynamicDithering.4K.Luminance.G.Min	0.00
+dynamicDithering.4K.Luminance.G.Max	1.00
+dynamicDithering.4K.Luminance.B.Min	0.00
+dynamicDithering.4K.Luminance.B.Max	1.00
+
+dynamicDithering.4K.CurveExponent		1.0
+
+dynamicDithering.4K.UsePerChannelLuminance 0.0
+
+HDR10Dithering.enabled 	1
+HDR10Dithering.dynNoise 1
+HDR10Dithering.range 	1023
+
+hdr.game.useITMBlend			1
+
+hdr.game.cc.enabled 			0
+
+hdr.game.cc.primary.lift.r 		1.0
+hdr.game.cc.primary.lift.g 		1.0
+hdr.game.cc.primary.lift.b 		1.0
+hdr.game.cc.primary.gamma.r 	1.0
+hdr.game.cc.primary.gamma.g 	1.0
+hdr.game.cc.primary.gamma.b 	1.0
+hdr.game.cc.primary.gain.r	 	1.0
+hdr.game.cc.primary.gain.g		1.0
+hdr.game.cc.primary.gain.b 		1.0
+
+hdr.game.cc.levels.min.r 		0.0
+hdr.game.cc.levels.min.g 		0.0
+hdr.game.cc.levels.min.b 		0.0
+hdr.game.cc.levels.max.r 		1.0
+hdr.game.cc.levels.max.g 		1.0
+hdr.game.cc.levels.max.b 		1.0
+hdr.game.cc.levels.gamma.r 		1.0
+hdr.game.cc.levels.gamma.g 		1.0
+hdr.game.cc.levels.gamma.b 		1.0
+
+hdr.game.cc.HSV.hueShift 		0.0
+hdr.game.cc.HSV.saturation 		1.0
+hdr.game.cc.HSV.contrast 		1.0
+hdr.game.cc.HSV.contrastPivot	1.0
+hdr.game.cc.HSV.value			1.0
+
+hdr.ui.cc.enabled 				1
+hdr.ui.alphaAdjustment.enabled 	1
+
+hdr.ui.cc.primary.lift.r 	1.0
+hdr.ui.cc.primary.lift.g 	1.0
+hdr.ui.cc.primary.lift.b 	1.0
+hdr.ui.cc.primary.gamma.r 	1.0
+hdr.ui.cc.primary.gamma.g 	1.0
+hdr.ui.cc.primary.gamma.b 	1.0
+hdr.ui.cc.primary.gain.r	1.0
+hdr.ui.cc.primary.gain.g	1.0
+hdr.ui.cc.primary.gain.b 	1.0
+
+hdr.ui.cc.levels.min.r 		0.0
+hdr.ui.cc.levels.min.g 		0.0
+hdr.ui.cc.levels.min.b 		0.0
+hdr.ui.cc.levels.max.r 		1.0
+hdr.ui.cc.levels.max.g 		1.0
+hdr.ui.cc.levels.max.b 		1.0
+hdr.ui.cc.levels.gamma.r 	1.0
+hdr.ui.cc.levels.gamma.g 	1.0
+hdr.ui.cc.levels.gamma.b 	1.0
+
+hdr.ui.cc.HSV.hueShift 		0.0
+hdr.ui.cc.HSV.saturation 	1.0
+hdr.ui.cc.HSV.contrast 		1.5
+hdr.ui.cc.HSV.contrastPivot	0.81
+hdr.ui.cc.HSV.value			1.0
+
+hdr.noiseIntensityMult		0.18

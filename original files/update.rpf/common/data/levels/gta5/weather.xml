@@ -894,7 +894,89 @@
     <TimeCycleFilename platform="!pc">COMMON:/DATA/TIMECYCLE/W_RAIN.XML</TimeCycleFilename>-->
 	<TimeCycleFilename>COMMON:/DATA/TIMECYCLE/W_HALLOWEEN.XML</TimeCycleFilename>
     <CloudSettingsName>HALLOWEENclouds</CloudSettingsName>
-  </Item> 
+  </Item>
+   <Item>
+    <Name>RAIN_HALLOWEEN</Name>
+	<Sun value="0.1"/>
+    <Cloud value="0.000000"/>
+    <WindMin value="0.4"/>
+    <WindMax value="1.0"/>
+    <Rain value="1.000000"/>
+    <Snow value="0.000000"/>
+    <SnowMist value="0.000000"/>
+    <Fog value="0.000000"/>
+    <RippleBumpiness value="0.420000" />
+    <RippleMinBumpiness value="0.250000" />
+    <RippleMaxBumpiness value="0.500000" />
+    <RippleBumpinessWindScale value="0.500000" />
+    <RippleScale value="0.040000" />
+    <RippleSpeed value="20.000000" />
+    <RippleVelocityTransfer value="0.450000" />
+    <OceanBumpiness value="0.250000" />
+    <DeepOceanScale value="4.46000" />
+    <OceanNoiseMinAmplitude value="20.55000" />
+    <OceanWaveAmplitude value="2.030000" />
+    <ShoreWaveAmplitude value="1.800000" />
+    <OceanWaveWindScale value="0.700000" />
+    <ShoreWaveWindScale value="0.700000" />
+    <OceanWaveMinAmplitude value="3.760000" />
+    <ShoreWaveMinAmplitude value="2.000000" />
+    <OceanWaveMaxAmplitude value="14.500000" />
+    <ShoreWaveMaxAmplitude value="1.500000" />
+    <OceanFoamIntensity value="0.140000" />
+    <OceanFoamScale value="0.050000" />
+    <RippleDisturb value="0.050000" />
+    <Lightning value="true"/>
+    <Sandstorm value="false"/>
+    <DropSettingName>RAINSTORM_DROP</DropSettingName>
+    <MistSettingName>RAINSTORM_MIST</MistSettingName>
+    <GroundSettingName>RAINSTORM_GROUND</GroundSettingName>
+<!--    <TimeCycleFilename platform="pc">COMMON:/DATA/TIMECYCLE/W_RAIN_PC.XML</TimeCycleFilename>
+    <TimeCycleFilename platform="!pc">COMMON:/DATA/TIMECYCLE/W_RAIN.XML</TimeCycleFilename>-->
+	<TimeCycleFilename>COMMON:/DATA/TIMECYCLE/w_rainHalloween.XML</TimeCycleFilename>
+    <CloudSettingsName>HALLOWEENclouds</CloudSettingsName>
+  </Item>
+<Item>
+    <Name>SNOW_HALLOWEEN</Name>
+    <Sun value="1.000000"/>
+    <Cloud value="0.000000"/>
+    <WindMin value="0.2"/>
+    <WindMax value="0.4"/>
+    <Rain value="0.000000"/>
+    <Snow value="0.300000"/>
+    <SnowMist value="0.20000"/>
+    <Fog value="0.500000"/>
+    <RippleBumpiness value="0.420000" />
+    <RippleMinBumpiness value="0.250000" />
+    <RippleMaxBumpiness value="0.500000" />
+    <RippleBumpinessWindScale value="0.500000" />
+    <RippleScale value="0.040000" />
+    <RippleSpeed value="20.000000" />
+    <RippleVelocityTransfer value="0.450000" />
+    <OceanBumpiness value="0.250000" />
+    <DeepOceanScale value="1.00000" />
+    <OceanNoiseMinAmplitude value="5.00000" />
+    <OceanWaveAmplitude value="0.500000" />
+    <ShoreWaveAmplitude value="1.800000" />
+    <OceanWaveWindScale value="0.700000" />
+    <ShoreWaveWindScale value="0.700000" />
+    <OceanWaveMinAmplitude value="0.000000" />
+    <ShoreWaveMinAmplitude value="0.000000" />
+    <OceanWaveMaxAmplitude value="0.500000" />
+    <ShoreWaveMaxAmplitude value="1.500000" />
+    <OceanFoamIntensity value="0.140000" />
+    <OceanFoamScale value="0.050000" />
+    <RippleDisturb value="0.050000" />
+    <Lightning value="true"/>
+    <Sandstorm value="false"/>
+    <DropSettingName>VFX_SNOW_LIGHT_DROP</DropSettingName>
+    <MistSettingName>-</MistSettingName>
+    <GroundSettingName>VFX_SNOW_HEAVY_GROUND</GroundSettingName>
+<!--    <TimeCycleFilename platform="pc">COMMON:/DATA/TIMECYCLE/W_snow_PC.XML</TimeCycleFilename>
+    <TimeCycleFilename platform="!pc">COMMON:/DATA/TIMECYCLE/W_snow.XML</TimeCycleFilename>-->
+    <TimeCycleFilename>COMMON:/DATA/TIMECYCLE/w_snowHalloween.XML</TimeCycleFilename>
+    <CloudSettingsName>HALLOWEENclouds</CloudSettingsName>
+	</Item>    
   </WeatherTypes>
   <WeatherCycles>
     <Item>

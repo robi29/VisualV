@@ -46,7 +46,7 @@
     <fog_col_g>0.718 0.100</fog_col_g>
     <fog_col_b>1.000 0.100</fog_col_b>
     <fog_col_a>1.000 0.100</fog_col_a>
-    <fog_hdr>32.000 0.050</fog_hdr>
+    <fog_hdr>32.000 0.001</fog_hdr>
     <reflection_tweak_directional>0.302 0.000</reflection_tweak_directional>
     <particle_light_intensity_mult>0.600 1.000</particle_light_intensity_mult>
   </modifier>
