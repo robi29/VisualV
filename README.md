@@ -55,7 +55,7 @@ https://www.mediafire.com/folder/vrv4z3navwafa/VisualV
 http://gtaforums.com/topic/792891-vwipvisualv
 
 # ENB Series installation
-Firstly, download ENB Series here and install it to GTAV directory: http://enbdev.com/mod_gta5_v0456.htm
+Firstly, download ENB Series here and install it to GTAV directory: http://enbdev.com/mod_gta5_v0492.htm
 
 Copy all files in "ENB settings" to root folder of Grand Theft Auto V (e.g. C:\Games\Rockstar Games\Grand Theft Auto V).
 
